@@ -1,7 +1,7 @@
 {{ $result := (slice) }}
 {{- range . }}
-    {{ $family := index (split .name ", ") 0 }}
-    {{ $given := index (split .name ", ") 1 }}
+    {{ $family := index (split . ", ") 0 }}
+    {{ $given := index (split . ", ") 1 }}
     {{ $result = $result | append (printf "%s %s" $given $family) }}
 {{- end -}}
 {{return $result }}
