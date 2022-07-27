@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gergő Pintér</title>
+    <link>/</link>
+    <description>Recent content on Gergő Pintér</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2022</copyright>
+    <lastBuildDate>Sat, 16 Jul 2022 09:31:15 +0200</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>publications</title>
+      <link>/publications/</link>
+      <pubDate>Sat, 16 Jul 2022 09:31:15 +0200</pubDate>
+      
+      <guid>/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>/about/</link>
+      <pubDate>Sat, 16 Jul 2022 09:30:57 +0200</pubDate>
+      
+      <guid>/about/</guid>
+      <description>engineering information technologist, Ph.D.
+I am a postdoctoral research fellow at Laboratory for Networks, Technology &amp;amp; Innovation of Corvinus University.
+I am interested in data science, urban mobility, social sensing, and computational sociology.</description>
+    </item>
+    
+  </channel>
+</rss>
