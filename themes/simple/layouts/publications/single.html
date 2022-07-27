@@ -1,6 +1,9 @@
 {{ partial "header.html" . }}
 {{ partial "nav.html" "publications" }}
 
+<div class="container mt-3">
+    <h1>{{ .Title }}</h1>
+</div>
 <div class="container pb-5">
 {{ $.Scratch.Set "last_year" 3000 }}
     {{- range (sort $.Site.Data.ris ".PY" "desc") -}}
