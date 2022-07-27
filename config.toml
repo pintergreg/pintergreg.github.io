@@ -1,0 +1,26 @@
+theme="simple"
+#baseurl = "https://github.io/pintergreg/"
+relativeURLs = true
+DefaultContentLanguage = "en"
+languageCode = "en"
+#enableGitInfo = true
+title = "Gergő Pintér"
+MetaDataFormat = "toml"
+copyright = "2022"
+
+
+
+# requires Hugo 0.41 or higher
+[privacy]
+  [privacy.googleAnalytics]
+    anonymizeIP = true
+    disable = true
+    respectDoNotTrack = true
+    useSessionStorage = true
+  [privacy.twitter]
+    disable = true
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    disable = true
+    privacyEnhanced = true

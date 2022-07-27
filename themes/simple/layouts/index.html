@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+    {{ partial "nav.html" "about" }}
+
+    {{ with .Site.GetPage "/about.md" }}
+    <div class="container mt-3">
+        <h1>{{ .Title }}</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8">
+                {{ .Content }}
+            </div>
+            <div class="col">
+              <figure>
+                  <img src="images/selfie2.jpg" width="250">
+              </figure>
+            </div>
+        </div>
+    </div>
+
+    {{ end }}
+{{ partial "footer.html" . }}

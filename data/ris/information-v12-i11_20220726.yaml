@@ -1,0 +1,38 @@
+---
+type: EJOU
+AU:
+- Pintér, Gergő
+- Felde, Imre
+TI: 'Analyzing the Behavior and Financial Status of Soccer Fans from a Mobile Phone
+  Network Perspective: Euro 2016, a Case Study'
+T2: Information
+PY: '2021'
+VL: '12'
+IS: '11'
+SN: 2078-2489
+AB: In this study, Call Detail Records (CDRs) covering Budapest for the month of June
+  in 2016 were analyzed. During this observation period, the 2016 UEFA European Football
+  Championship took place, which significantly affected the habit of the residents
+  despite the fact that not a single match was played in the city. We evaluated the
+  fans’ behavior in Budapest during and after the Hungarian matches and found that
+  the mobile phone network activity reflected the football fans’ behavior, demonstrating
+  the potential of the use of mobile phone network data in a social sensing system.
+  The Call Detail Records were enriched with mobile phone properties and used to analyze
+  the subscribers’ devices. Applying the device information (Type Allocation Code)
+  obtained from the activity records, the Subscriber Identity Modules (SIM), which
+  do not operate in cell phones, were omitted from mobility analyses, allowing us
+  to focus on the behavior of people. Mobile phone price was proposed and evaluated
+  as a socioeconomic indicator and the correlation between the phone price and the
+  mobility customs was found. We also found that, besides the cell phone price, the
+  subscriber age and subscription type also had effects on users’ mobility. On the
+  other hand, these factors did not seem to affect their interest in football.
+KW:
+- mobile phone data
+- call detail records
+- type allocation code
+- data analysis
+- human mobility
+- large social event
+- social sensing
+- socioeconomic status
+DO: 10.3390/info12110468
