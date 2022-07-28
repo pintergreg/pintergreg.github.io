@@ -8,6 +8,13 @@ title = "Gergő Pintér"
 MetaDataFormat = "toml"
 copyright = "2022"
 
+[Params]
+  github = "pintergreg"
+  twitter = "pintergreg"
+  orcid = "0000-0003-4731-3816"
+  researchgate = "Gergo-Pinter"
+  linkedin = "gerg%C5%91-pint%C3%A9r-20454667"
+  scholar = "801sS3AAAAAJ"
 
 
 # requires Hugo 0.41 or higher

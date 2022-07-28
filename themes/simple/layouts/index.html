@@ -9,6 +9,26 @@
         <div class="row">
             <div class="col-8">
                 {{ .Content }}
+                <div>
+                    {{- with $.Site.Params.github }}
+                        <a href="https://github.com/{{$.Site.Params.github}}" class="text-dark" title="GitHub"><i class="fs-1 fa-brands fa-github"></i></a>
+                    {{- end }}
+                    {{- with $.Site.Params.twitter }}
+                        <a href="https://twitter.com/{{$.Site.Params.twitter}}" class="text-dark" title="Twitter"><i class="fs-1 fa-brands fa-twitter"></i></a>
+                    {{- end }}
+                    {{- with $.Site.Params.orcid }}
+                        <a href="https://orcid.org/{{$.Site.Params.orcid}}" class="text-dark" title="ORCiD"><i class="fs-1 fa-brands fa-orcid"></i></a>
+                    {{- end }}
+                    {{- with $.Site.Params.researchgate }}
+                        <a href="https://www.researchgate.net/profile/{{$.Site.Params.researchgate}}" class="text-dark" title="ResearchGate"><i class="fs-1 fa-brands fa-researchgate"></i></a>
+                    {{- end }}
+                    {{- with $.Site.Params.scholar }}
+                        <a href="https://scholar.google.hu/citations?user={{$.Site.Params.scholar}}" class="text-dark" title="Google Scholar"><i class="fs-1 fa-solid fa-graduation-cap"></i></a>
+                    {{- end }}
+                    {{- with $.Site.Params.linkedin }}
+                        <a href="https://www.linkedin.com/in/{{$.Site.Params.linkedin}}" class="text-dark" title="LinkedIn"><i class="fs-1 fa-brands fa-linkedin"></i></a>
+                    {{- end }}
+                </div>
             </div>
             <div class="col">
               <figure>
