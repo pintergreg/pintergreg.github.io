@@ -6,10 +6,6 @@
     <description>Recent content in Tags on Gergő Pintér</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>2022</copyright>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>2022</copyright><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
