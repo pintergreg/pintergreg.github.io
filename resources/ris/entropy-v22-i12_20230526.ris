@@ -1,0 +1,24 @@
+TY  - EJOUR
+AU  - Pinter, Gergő
+AU  - Mosavi, Amir 
+AU  - Felde, Imre 
+TI  - Artificial Intelligence for Modeling Real Estate Price Using Call Detail Records and Hybrid Machine Learning Approach
+T2  - Entropy
+PY  - 2020
+VL  - 22
+IS  - 12
+SN  - 1099-4300
+AB  - Advancement of accurate models for predicting real estate price is of utmost importance for urban development and several critical economic functions. Due to the significant uncertainties and dynamic variables, modeling real estate has been studied as complex systems. In this study, a novel machine learning method is proposed to tackle real estate modeling complexity. Call detail records (CDR) provides excellent opportunities for in-depth investigation of the mobility characterization. This study explores the CDR potential for predicting the real estate price with the aid of artificial intelligence (AI). Several essential mobility entropy factors, including dweller entropy, dweller gyration, workers’ entropy, worker gyration, dwellers’ work distance, and workers’ home distance, are used as input variables. The prediction model is developed using the machine learning method of multi-layered perceptron (MLP) trained with the evolutionary algorithm of particle swarm optimization (PSO). Model performance is evaluated using mean square error (MSE), sustainability index (SI), and Willmott’s index (WI). The proposed model showed promising results revealing that the workers’ entropy and the dwellers’ work distances directly influence the real estate price. However, the dweller gyration, dweller entropy, workers’ gyration, and the workers’ home had a minimum effect on the price. Furthermore, it is shown that the flow of activities and entropy of mobility are often associated with the regions with lower real estate prices.
+KW  - call detail records
+KW  - machine learning
+KW  - artificial intelligence
+KW  - real estate price
+KW  - cellular network
+KW  - smart cities
+KW  - telecommunications
+KW  - 5G
+KW  - computational science
+KW  - IoT
+KW  - urban development
+DO  - 10.3390/e22121421
+ER  -
