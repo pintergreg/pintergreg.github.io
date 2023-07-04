@@ -25,16 +25,9 @@ Dir.glob("resources/bibtex/*.bib") do |bibtex|
     # end
     FileUtils.mkdir_p("data/bibtex")
 
-    File.open("data/bibtex/#{File.basename(bibtex, ".bib")}.json", "w") do |file|
-        file.write(BibTeX.open(bibtex)[0].to_json)
-    end
-    File.open("data/bibtex/#{File.basename(bibtex, ".bib")}_b.yaml", "w") do |file|
-        file.write(BibTeX.open(bibtex)[0].to_yaml(:extended => true))
-    end
     File.open("data/bibtex/#{File.basename(bibtex, ".bib")}.xml", "w") do |file|
         file.write(BibTeX.open(bibtex).to_xml(:extended => true))
     end
-
 
     File.open("data/bibtex/#{File.basename(bibtex, ".bib")}.yaml", "w") do |file|
         file.write(YAML.dump(cp.items[File.basename(bibtex, ".bib")].to_citeproc))
