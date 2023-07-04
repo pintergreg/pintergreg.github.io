@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'ref_parsers'
+load 'lib/ref_parsers.rb'
 require 'yaml'
 require 'fileutils'
 
