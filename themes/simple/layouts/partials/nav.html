@@ -10,9 +10,15 @@
 {{- if eq . "publications" }}
 {{ $publications = "active" }}
 {{- end }}
+{{- $display_brand := true }}
+{{- if eq . "disable_brand" }}
+{{ $display_brand = false }}
+{{- end }}
 <nav class="navbar navbar-expand sticky-top navbar-light bg-light">
   <div class="container-fluid">
+    {{- if eq $display_brand true}}
     <a class="navbar-brand" href="/">Gergő Pintér</a>
+    {{- end }}
       <div class="navbar-nav">
         <a class="nav-link {{ $about }}" aria-current="page" href="/">about</a>
 <!--
