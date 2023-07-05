@@ -25,12 +25,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-          # sudo gem install ref_parsers
       - name: install stuff
         run: |
-          sudo apt-get install -y hugo ruby
-      - name: convert RIS to YAML
-        run: ruby conv.rb
+          sudo apt-get install -y hugo ruby python3 python3-poetry
+          poetry install
+    # sudo gem install ref_parsers
+      # - name: convert RIS to YAML (ruby)
+      #   run: ruby conv.rb
+      - name: convert RIS to YAML (python)
+        run: poetry run python conv.py
 
       - name: build site
         run: hugo
