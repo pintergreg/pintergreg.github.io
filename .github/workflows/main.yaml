@@ -28,7 +28,7 @@ jobs:
       - name: install stuff
         run: |
           sudo apt-get install -y hugo ruby python3 python3-poetry
-          poetry install
+          poetry lock && poetry install
     # sudo gem install ref_parsers
       # - name: convert RIS to YAML (ruby)
       #   run: ruby conv.rb
