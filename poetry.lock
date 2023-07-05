@@ -66,5 +66,5 @@ test = ["coverage", "pytest"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.11"
-content-hash = "c5826b14f62bdff15fcc8b0f9b9e21d3fc68d3ec44f391723354f68f1357af46"
+python-versions = "^3.10"
+content-hash = "7a4e0f8be5edba1bd5227326740533854fca7c0d6633f2693f7541a905679ed1"
