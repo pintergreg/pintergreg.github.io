@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "convert-references"
+version = "0.1.0"
+description = ""
+authors = ["pintergreg <pintergreg@gmail.com>"]
+readme = "README.md"
+packages = [{include = "convert_references"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rispy = "^0.7.1"
+PyYAML = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
