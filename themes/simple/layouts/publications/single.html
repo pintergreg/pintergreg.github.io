@@ -16,9 +16,12 @@
     <section class="mt-4">
         <h2 class="fs-5">{{ .TI }}</h2>
         <div>{{ delimit (partial "restructure_names.func" .AU) ", " }}</div>
-        {{- if eq .type "EJOU" }}
+        {{- if or (eq .type "EJOU") (eq .type "EJOUR") }}
         <div>{{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
-        {{- end -}}
+        {{- end }}
+        {{- if eq .type "JOUR" }}
+        <div>{{.JO}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
+        {{- end }}
 
         <div>
             {{ $id := .DO | replaceRE "\\.|/" "-" }}
