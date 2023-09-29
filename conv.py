@@ -3,6 +3,7 @@ from pathlib import Path
 import rispy
 from rispy import TAG_KEY_MAPPING
 
+Path("data/ris").mkdir(parents=True, exist_ok=True)
 mapping = {k: k for k, v in TAG_KEY_MAPPING.items()}
 for ris_file in Path("resources/ris/").glob("*.ris"):
     text = ris_file.read_text()
