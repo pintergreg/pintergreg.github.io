@@ -10,6 +10,10 @@
 {{- if eq . "publications" }}
 {{ $publications = "active" }}
 {{- end }}
+{{ $talks := ""}}
+{{- if eq . "talks" }}
+{{ $talks = "active" }}
+{{- end }}
 {{- $display_brand := true }}
 {{- if eq . "disable_brand" }}
 {{ $display_brand = false }}
@@ -25,6 +29,7 @@
         <a class="nav-link {{ $cv }}" href="#">cv</a>
 -->
         <a class="nav-link {{ $publications }}" href="/publications">publications</a>
+        <a class="nav-link {{ $talks }}" href="/talks">talks</a>
         <a class="nav-link" href="https://pintergreg.github.io/dissertation/">dissertation</a>
       </div>
   </div>

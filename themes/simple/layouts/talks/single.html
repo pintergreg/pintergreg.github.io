@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" "talks" }}
+
+<div class="container mt-3">
+    <h1>{{ .Title }}</h1>
+</div>
+<div class="container pb-5">
+{{ $.Scratch.Set "last_year" 3000 }}
+    {{- range (sort $.Site.Data.talks ".year" "desc") -}}
+    {{- if lt (int .year) ($.Scratch.Get "last_year") }}
+    <div class="border-bottom">
+        <div class="text-end mt-2">{{.year}}</div>
+    </div>
+    {{ $.Scratch.Set "last_year" (int .year) }}
+    {{- end }}
+    <section class="mt-4">
+        <h2 class="fs-5">{{ .title }}</h2>
+        <div>{{.name}}, {{.date}}, {{.location}} </div>
+        <div><a href="{{.website}}">{{.website}}</a></div>
+        {{/*
+        <div>
+            {{ $id := .name | replaceRE " " "-" }}
+            <span class="badge bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{$id}}" aria-expanded="false" aria-controls="collapse-{{$id}}">
+                conference description
+            </span>
+            <div class="collapse" id="collapse-{{$id}}">
+                <div class="card card-body">
+                {{.description}}
+                </div>
+            </div>
+        </div>
+        */}}
+    </section>
+    {{- end -}}
+</div>
+{{ partial "footer.html" . }}
