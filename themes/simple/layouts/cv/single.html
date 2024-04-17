@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" "cv" }}
+
+<div class="container mt-3">
+    <h1>{{ .Title }}</h1>
+</div>
+<div class="container pb-5">
+     <section class="mt-4">
+        <h2 class="fs-5">Language skills</h2>
+        <div>
+        {{- if gt (len $.Params.language_skills.mother_tongues) 1}}
+        mother tongue(s):
+        {{- else }}
+        mother tongue:
+        {{- end }}
+        {{ delimit $.Params.language_skills.mother_tongues ","}}
+        </div>
+        <div>
+        {{- if gt (len $.Params.language_skills.other_languages) 1}}
+        other language(s):
+        {{- else }}
+        other language:
+        {{- end }}
+        <ul>
+        {{ range $.Params.language_skills.other_languages }}
+        <li>{{.language}} <span><span class="tip" title="Common European Framework of Reference for Languages">CEFRL</span> {{.certificate}}</span></li>
+        {{- end }}
+        </ul>
+        </div>
+     </section>
+</div>
+{{ partial "footer.html" . }}
