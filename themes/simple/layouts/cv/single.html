@@ -58,7 +58,14 @@
         {{- end }}
         <ul>
         {{ range $.Params.language_skills.other_languages }}
-        <li>{{.language}} <span class="" ><abbr title="Common European Framework of Reference for Languages">CEFRL</abbr> {{.certificate}}</span></li>
+        <li>{{.language}}
+        <ul>
+          <li>certificate: <abbr title="Common European Framework of Reference for Languages">CEFRL</abbr> {{.certificate}}</li>
+          {{- with .self_assessment -}}
+          <li>self-assessment: <abbr title="Common European Framework of Reference for Languages">CEFRL</abbr> {{.}}</li>
+          {{- end }}
+        </ul> 
+        </li>
         {{- end }}
         </ul>
         </div>

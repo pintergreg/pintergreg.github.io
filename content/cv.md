@@ -53,10 +53,10 @@ language_skills:
     other_languages:
         - language: English
           certificate: B2
-          self-assessment: C1
+          self_assessment: C1
         - language: Swedish
           certificate: B1
-          self-assessment: B1
+          self_assessment:
 employment:
     - title: research fellow
       organization:
