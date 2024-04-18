@@ -6,6 +6,41 @@
 </div>
 <div class="container pb-5">
      <section class="mt-4">
+        <h2 class="fs-5">Employment</h2>
+        <div>
+        {{- range $.Params.employment }}
+        <div>
+            <h3 class="fs-6">{{.title}}</h3>
+            <ul>
+            <li>at {{.organization.name}}</li>
+            <li>from {{.period.start}}{{- with .period.end }} to {{.}}{{- end -}}</li>
+            </ul>
+        </div>
+        {{- end }}
+        </div>
+     </section>
+     <section class="mt-4">
+        <h2 class="fs-5">Education</h2>
+        <div>
+        {{- range $.Params.education }}
+        <div>
+        <h3 class="fs-6">{{.degree.name}}</h3>
+        <ul>
+        <li>
+        {{.organization.name}}, {{.organization.city}}, {{.organization.country}}
+        </li>
+        <li>
+        <abbr title="European Qualifications Framework">EQF</abbr> level: {{.eqf_level}}
+        </li>
+        <li>
+        thesis: {{.degree.thesis}}
+        </li>
+        </ul>
+        </div>
+        {{- end }}
+        </div>
+     </section>
+     <section class="mt-4">
         <h2 class="fs-5">Language skills</h2>
         <div>
         {{- if gt (len $.Params.language_skills.mother_tongues) 1}}
@@ -23,7 +58,7 @@
         {{- end }}
         <ul>
         {{ range $.Params.language_skills.other_languages }}
-        <li>{{.language}} <span><span class="tip" title="Common European Framework of Reference for Languages">CEFRL</span> {{.certificate}}</span></li>
+        <li>{{.language}} <span class="" ><abbr title="Common European Framework of Reference for Languages">CEFRL</abbr> {{.certificate}}</span></li>
         {{- end }}
         </ul>
         </div>
