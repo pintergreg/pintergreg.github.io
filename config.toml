@@ -6,7 +6,7 @@ languageCode = "en"
 #enableGitInfo = true
 title = "Gergő Pintér"
 MetaDataFormat = "toml"
-copyright = "2022"
+copyright = "2024"
 
 [Params]
   github = "pintergreg"
