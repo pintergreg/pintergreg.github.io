@@ -33,7 +33,11 @@
         <abbr title="European Qualifications Framework">EQF</abbr> level: {{.eqf_level}}
         </li>
         <li>
+        {{- if eq .eqf_level 8 }}
+        dissertation: {{.degree.thesis}}
+        {{- else }}
         thesis: {{.degree.thesis}}
+        {{- end }}
         </li>
         </ul>
         </div>
