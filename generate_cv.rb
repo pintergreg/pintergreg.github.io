@@ -16,28 +16,5 @@ asciidoc = %{
 
 GitHub: https://github.com/<%= config["Params"]["github"] %> |
 GitLab: https://gitlab.com/<%= config["Params"]["gitlab"] %> |
-
-## Employment
-
-## Education
-
-## Language skills
-
-<% if cv["language_skills"]["mother_tongues"].length > 1 -%>
-mother tongues: <%= cv["language_skills"]["mother_tongues"].join(", ") -%>
-<% else -%>
-mother tongue: <%= cv["language_skills"]["mother_tongues"].join(", ") -%>
-<% end -%>
-
-other language(s):
-<% cv["language_skills"]["other_languages"].each do |i| -%>
-* <%= i["language"] %>
-** certificate: CEFRL <%= i["certificate"]["level"]%> (<%= i["certificate"]["date"]%>)
-<% if i["self_assessment"] -%>
-** self-assessment: CEFRL <%= i["self_assessment"] %>
-<% end -%>
-<% end -%>
-
-## Publications
 }
 puts ERB.new(asciidoc, trim_mode: "-").result(binding)
