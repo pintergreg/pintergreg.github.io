@@ -5,7 +5,6 @@ require 'toml-rb'
 
 config = TomlRB.parse(File.read('config.toml'))
 
-cv = YAML.load_file('content/cv.md', permitted_classes: [Date, DateTime])
 personal = YAML.load_file('data/personal.yaml', permitted_classes: [Date, DateTime])
 
 asciidoc = %{
