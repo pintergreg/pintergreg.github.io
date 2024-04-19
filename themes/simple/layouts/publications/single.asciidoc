@@ -17,10 +17,10 @@
 * {{ .TI }}
 ** {{ delimit (partial "restructure_names.func" .AU) ", " }}
 {{- if or (eq .TY "EJOU") (eq .TY "EJOUR") }}
-** {{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); link:https://doi.org/{{.DO}}"[{{.DO}}]
+** {{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); link:https://doi.org/{{.DO}}[{{.DO}}]
 {{- end }}
 {{- if eq .TY "JOUR" }}
-** {{.JO}} {{.PY}}, {{.VL}} ({{.IS}}); link:https://doi.org/{{.DO}}"[{{.DO}}]
+** {{.JO}} {{.PY}}, {{.VL}} ({{.IS}}); link:https://doi.org/{{.DO}}[{{.DO}}]
 {{- end }}
 
 {{- end }}
