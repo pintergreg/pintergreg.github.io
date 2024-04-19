@@ -1,0 +1,49 @@
+== Employment
+
+=== research fellow
+
+* at Corvinus University of Budapest
+** from 2022-06-01
+
+=== university research assistant
+
+* at Óbuda University
+** from 2016-02-01 to 2022-03-31
+
+=== software developer
+
+* at Institute for Computer Science and Control, Hungarian Academy of Sciences (MTA SZTAKI)
+** from 2015-10-01 to 2016-09-30
+
+== Education
+
+=== PhD in Applied Informatics
+
+* Óbuda University, Budapest, Hungary
+* EQFfootnote:eqf[European Qualifications Framework] level: 8
+* dissertation: Analyzing the Mobility Customs of the Urban Population Using Mobile Network Data
+
+=== Engineering Information Technologist (MSc)
+
+* Óbuda University, Budapest, Hungary
+* EQFfootnote:eqf[European Qualifications Framework] level: 7
+* thesis: Fault-tolerance in distributed stream processing systems
+
+=== Engineering Information Technologist (BSc)
+
+* Óbuda University, Budapest, Hungary
+* EQFfootnote:eqf[European Qualifications Framework] level: 6
+* thesis: Support for Nature Inspired Coordination Models
+
+== Language skills
+
+
+mother tongue: Hungarian
+
+other language(s):
+
+* English
+** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] B2 (2009-06-23)
+** self-assessment: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] C1
+* Swedish
+** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] B1 (2019-11-06)
