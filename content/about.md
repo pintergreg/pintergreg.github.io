@@ -6,6 +6,6 @@ draft: false
 
 engineering information technologist, Ph.D.
 
-I am a postdoctoral research fellow at [Laboratory for Networks, Technology & Innovation](https://www.netilab.hu/) of Corvinus University.
+postdoctoral research fellow at [Laboratory for Networks, Technology & Innovation](https://www.netilab.hu/) of Corvinus University of Budapest
 
-I am interested in data science, urban mobility, social sensing, and computational sociology.
+interested in data science, urban mobility, social sensing, computational sociology, and software engineering
