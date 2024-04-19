@@ -5,9 +5,13 @@
     <h1>{{ .Title }}</h1>
 </div>
 <div class="container pb-5">
+{{ $papers := slice }}
+{{ range $.Site.Data.ris }}
+  {{ $papers = $papers | append . }}
+{{ end }}
 
-{{ $.Scratch.Set "last_year" 3000 }}
-    {{- range (sort ($.Site.Data.ris) ".PY" "desc") -}}
+{{- $.Scratch.Set "last_year" 3000 }}
+    {{- range (sort (where $papers "type" "ne" "MANSCPT") ".PY" "desc") -}}
     {{- if lt (int .PY) ($.Scratch.Get "last_year") }}
     <div class="border-bottom">
         <div class="text-end mt-2">{{.PY}}</div>
