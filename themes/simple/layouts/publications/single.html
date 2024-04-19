@@ -11,7 +11,7 @@
 {{ end }}
 
 {{- $.Scratch.Set "last_year" 3000 }}
-    {{- range (sort (where $papers "type" "ne" "MANSCPT") ".PY" "desc") -}}
+    {{- range (sort (where $papers "TY" "ne" "MANSCPT") ".PY" "desc") -}}
     {{- if lt (int .PY) ($.Scratch.Get "last_year") }}
     <div class="border-bottom">
         <div class="text-end mt-2">{{.PY}}</div>
@@ -21,10 +21,10 @@
     <section class="mt-4">
         <h2 class="fs-5">{{ .TI }}</h2>
         <div>{{ delimit (partial "restructure_names.func" .AU) ", " }}</div>
-        {{- if or (eq .type "EJOU") (eq .type "EJOUR") }}
+        {{- if or (eq .TY "EJOU") (eq .TY "EJOUR") }}
         <div>{{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
         {{- end }}
-        {{- if eq .type "JOUR" }}
+        {{- if eq .TY "JOUR" }}
         <div>{{.JO}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
         {{- end }}
 
