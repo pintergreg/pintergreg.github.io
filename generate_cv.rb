@@ -11,6 +11,7 @@ personal = YAML.load_file('data/personal.yaml', permitted_classes: [Date, DateTi
 asciidoc = %{
 = <%= config['title'] %>
 :icons:
+:hide-uri-scheme:
 
 ### contact
 
