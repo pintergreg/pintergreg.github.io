@@ -4,7 +4,7 @@
 {{- end }}
 {{- $.Scratch.Set "last_year" 3000 -}}
 
-== Publications
+== publications
 
 {{- range (sort (where $papers "TY" "ne" "MANSCPT") ".PY" "desc") }}
 {{- if lt (int .PY) ($.Scratch.Get "last_year") }}

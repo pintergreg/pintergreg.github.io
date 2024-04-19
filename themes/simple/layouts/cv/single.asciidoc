@@ -1,4 +1,4 @@
-== Employment
+== employment
 
 {{- range $.Params.employment }}
 
@@ -8,7 +8,7 @@
 ** from {{.period.start}}{{- with .period.end }} to {{.}}{{- end }}
 {{- end }}
 
-== Education
+== education
 
 {{- range $.Params.education }}
 
@@ -23,7 +23,7 @@
 {{- end }}
 {{- end }}
 
-== Language skills
+== language skills
 
 {{ "" }}
 {{- if gt (len $.Params.language_skills.mother_tongues) 1 }}
