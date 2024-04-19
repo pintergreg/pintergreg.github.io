@@ -1,0 +1,49 @@
+== Employment
+
+{{- range $.Params.employment }}
+
+=== {{.title}}
+
+* at {{.organization.name}}
+** from {{.period.start}}{{- with .period.end }} to {{.}}{{- end }}
+{{- end }}
+
+== Education
+
+{{- range $.Params.education }}
+
+=== {{.degree.name}}
+
+* {{.organization.name}}, {{.organization.city}}, {{.organization.country}}
+* EQFfootnote:eqf[European Qualifications Framework] level: {{.eqf_level}}
+{{- if eq .eqf_level 8 }}
+* dissertation: {{.degree.thesis}}
+{{- else }}
+* thesis: {{.degree.thesis}}
+{{- end }}
+{{- end }}
+
+== Language skills
+
+{{ "" }}
+{{- if gt (len $.Params.language_skills.mother_tongues) 1 }}
+mother tongue(s): {{ delimit $.Params.language_skills.mother_tongues ","}}
+{{- else }}
+mother tongue: {{ delimit $.Params.language_skills.mother_tongues ","}}
+{{- end }}
+{{ "" }}
+
+{{- if gt (len $.Params.language_skills.other_languages) 1}}
+other language(s):
+{{- else }}
+other language:
+{{- end }}
+{{ "" }}
+
+{{- range $.Params.language_skills.other_languages }}
+* {{.language}}
+** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] {{.certificate.level}} ({{.certificate.date}})
+{{- with .self_assessment }}
+** self-assessment: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] {{.}}
+{{- end }}
+{{- end }}

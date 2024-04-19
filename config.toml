@@ -8,8 +8,26 @@ title = "Gergő Pintér"
 MetaDataFormat = "toml"
 copyright = "2024"
 
+
+[mediaTypes]
+  [mediaTypes.'text/html']
+    suffixes = ["html"]
+  [mediaTypes.'text/asciidoc']
+    suffixes = ["asciidoc"]
+
+[outputFormats]
+  [outputFormats.asciidoc]
+    # baseName = "index"
+    isPlainText = true
+    mediaType = "text/asciidoc"
+
+# [outputs]
+#   page = ["html", "asciidoc"]
+
+
 [Params]
   github = "pintergreg"
+  gitlab = "pintergreg"
   hackerrank = "pintergreg"
   twitter = "pintergreg"
   orcid = "0000-0003-4731-3816"
