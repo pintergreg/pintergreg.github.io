@@ -8,4 +8,4 @@ engineering information technologist, Ph.D.
 
 postdoctoral research fellow at [Laboratory for Networks, Technology & Innovation](https://www.netilab.hu/) of Corvinus University of Budapest
 
-interested in data science, urban mobility, social sensing, computational sociology, and software engineering
+interested in data science, data visualization, urban mobility, social sensing, computational sociology, and software engineering
