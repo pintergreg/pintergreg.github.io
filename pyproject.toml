@@ -9,7 +9,7 @@ packages = [{include = "convert_references"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 rispy = "^0.7.1"
-PyYAML = "^6.0"
+pyaml = "^24.4.0"
 
 [build-system]
 requires = ["poetry-core"]
