@@ -52,10 +52,14 @@ language_skills:
     mother_tongues: ["Hungarian"]
     other_languages:
         - language: English
-          certificate: B2
+          certificate:
+            level: B2
+            date: 2009-06-23
           self_assessment: C1
         - language: Swedish
-          certificate: B1
+          certificate:
+            level: B1
+            date: 2019-11-06
           self_assessment:
 employment:
     - title: research fellow

@@ -60,7 +60,7 @@
         {{ range $.Params.language_skills.other_languages }}
         <li>{{.language}}
         <ul>
-          <li>certificate: <abbr title="Common European Framework of Reference for Languages">CEFRL</abbr> {{.certificate}}</li>
+          <li>certificate: <abbr title="Common European Framework of Reference for Languages">CEFRL</abbr> {{.certificate.level}} ({{.certificate.date}})</li>
           {{- with .self_assessment -}}
           <li>self-assessment: <abbr title="Common European Framework of Reference for Languages">CEFRL</abbr> {{.}}</li>
           {{- end }}
