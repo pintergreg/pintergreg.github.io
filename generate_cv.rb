@@ -10,18 +10,22 @@ personal = YAML.load_file('data/personal.yaml', permitted_classes: [Date, DateTi
 asciidoc = %{
 = <%= config['title'] %>
 :icons:
+:iconsdir: static/icons
+:icontype: svg
 :hide-uri-scheme:
+
+
 
 == contact
 
-GitHub: link:https://github.com/<%= config["Params"]["github"] %>[] |
-GitLab: link:https://gitlab.com/<%= config["Params"]["gitlab"] %>[] |
-HackerRank: link:https://www.hackerrank.com/profile/<%= config["Params"]["hackerrank"] %>[] |
-ORCiD: link:https://orcid.org/<%= config["Params"]["orcid"] %>[] |
-Google Scholar: link:https://scholar.google.hu/citations?user=<%= config["Params"]["scholar"] %>[] |
-ResearchGate: link:https://www.researchgate.net/profile/<%= config["Params"]["researchgate"] %>[] |
-LinkedIn: link:https://www.linkedin.com/in/<%= config["Params"]["linkedin"] %>[] |
-Twitter: link:https://twitter.com/<%= config["Params"]["twitter"] %>[] |
+link:https://github.com/<%= config["Params"]["github"] %>[icon:github[],title=GitHub] |
+link:https://gitlab.com/<%= config["Params"]["gitlab"] %>[icon:gitlab[],title=GitLab] |
+link:https://www.hackerrank.com/profile/<%= config["Params"]["hackerrank"] %>[icon:hackerrank[],title=HackerRank] |
+link:https://orcid.org/<%= config["Params"]["orcid"] %>[icon:orcid[],title=ORCiD] |
+link:https://scholar.google.hu/citations?user=<%= config["Params"]["scholar"] %>[icon:google-scholar[],title=Google Scholar] |
+link:https://www.researchgate.net/profile/<%= config["Params"]["researchgate"] %>[icon:researchgate[],title=ResearchGate] |
+link:https://www.linkedin.com/in/<%= config["Params"]["linkedin"] %>[icon:linkedin[],title=LinkedIn] |
+link:https://twitter.com/<%= config["Params"]["twitter"] %>[icon:twitter[],title=Twitter]
 
 }
 asciidoc += File.read("public/cv/index.asciidoc")
