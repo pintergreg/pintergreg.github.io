@@ -9,6 +9,7 @@ personal = YAML.load_file('data/personal.yaml', permitted_classes: [Date, DateTi
 
 asciidoc = %{
 = <%= config['title'] %>
+:pdf-theme: cv_template.yml
 :icons:
 :iconsdir: static/icons
 :icontype: svg
