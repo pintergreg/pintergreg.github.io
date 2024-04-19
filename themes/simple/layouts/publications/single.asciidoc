@@ -1,0 +1,26 @@
+{{- $papers := slice -}}
+{{- range $.Site.Data.ris }}
+{{- $papers = $papers | append . }}
+{{- end }}
+{{- $.Scratch.Set "last_year" 3000 -}}
+
+== Publications
+
+{{- range (sort (where $papers "TY" "ne" "MANSCPT") ".PY" "desc") }}
+{{- if lt (int .PY) ($.Scratch.Get "last_year") }}
+
+=== {{.PY}}
+
+{{- $.Scratch.Set "last_year" (int .PY) }}
+{{- end }}
+
+* {{ .TI }}
+** {{ delimit (partial "restructure_names.func" .AU) ", " }}
+{{- if or (eq .TY "EJOU") (eq .TY "EJOUR") }}
+** {{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); link:https://doi.org/{{.DO}}"[{{.DO}}]
+{{- end }}
+{{- if eq .TY "JOUR" }}
+** {{.JO}} {{.PY}}, {{.VL}} ({{.IS}}); link:https://doi.org/{{.DO}}"[{{.DO}}]
+{{- end }}
+
+{{- end }}
