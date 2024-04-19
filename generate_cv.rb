@@ -12,7 +12,7 @@ asciidoc = %{
 :icons:
 :hide-uri-scheme:
 
-### contact
+== contact
 
 GitHub: link:https://github.com/<%= config["Params"]["github"] %>[] |
 GitLab: link:https://gitlab.com/<%= config["Params"]["gitlab"] %>[] |
@@ -24,4 +24,12 @@ LinkedIn: link:https://www.linkedin.com/in/<%= config["Params"]["linkedin"] %>[]
 Twitter: link:https://twitter.com/<%= config["Params"]["twitter"] %>[] |
 
 }
-puts ERB.new(asciidoc, trim_mode: "-").result(binding)
+asciidoc += File.read("public/cv/index.asciidoc")
+asciidoc += "\n"
+asciidoc += File.read("public/publications/index.asciidoc")
+asciidoc += "\n"
+# puts ERB.new(asciidoc, trim_mode: "-").result(binding)
+
+File.open("cv.asciidoc", "w") do |file|
+    file.write(ERB.new(asciidoc, trim_mode: "-").result(binding)) 
+end
