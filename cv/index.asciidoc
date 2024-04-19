@@ -1,4 +1,4 @@
-== Employment
+== employment
 
 === research fellow
 
@@ -15,7 +15,7 @@
 * at Institute for Computer Science and Control, Hungarian Academy of Sciences (MTA SZTAKI)
 ** from 2015-10-01 to 2016-09-30
 
-== Education
+== education
 
 === PhD in Applied Informatics
 
@@ -35,7 +35,7 @@
 * EQFfootnote:eqf[European Qualifications Framework] level: 6
 * thesis: Support for Nature Inspired Coordination Models
 
-== Language skills
+== language skills
 
 
 mother tongue: Hungarian
