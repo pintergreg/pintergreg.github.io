@@ -5,8 +5,9 @@
     <h1>{{ .Title }}</h1>
 </div>
 <div class="container pb-5">
+
 {{ $.Scratch.Set "last_year" 3000 }}
-    {{- range (sort $.Site.Data.ris ".PY" "desc") -}}
+    {{- range (sort ($.Site.Data.ris) ".PY" "desc") -}}
     {{- if lt (int .PY) ($.Scratch.Get "last_year") }}
     <div class="border-bottom">
         <div class="text-end mt-2">{{.PY}}</div>
@@ -16,10 +17,10 @@
     <section class="mt-4">
         <h2 class="fs-5">{{ .TI }}</h2>
         <div>{{ delimit (partial "restructure_names.func" .AU) ", " }}</div>
-        {{- if or (eq .TY "EJOU") (eq .TY "EJOUR") }}
+        {{- if or (eq .type "EJOU") (eq .type "EJOUR") }}
         <div>{{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
         {{- end }}
-        {{- if eq .TY "JOUR" }}
+        {{- if eq .type "JOUR" }}
         <div>{{.JO}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
         {{- end }}
 
