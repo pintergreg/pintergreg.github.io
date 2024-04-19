@@ -2,7 +2,7 @@
 
 require 'rqrcode'
 
-qrcode = RQRCode::QRCode.new('https://pintergreg.github.io/business_card')
+qrcode = RQRCode::QRCode.new('https://pintergreg.github.io')
 
 svg = qrcode.as_svg(
   color: '#2d2d2d',
