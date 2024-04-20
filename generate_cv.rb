@@ -51,6 +51,8 @@ File.open("cv.asciidoc", "w") do |file|
     file.write(ERB.new(asciidoc, trim_mode: "-").result(binding)) 
 end
 
+%x(asciidoctor-pdf cv.asciidoc)
+
 if Dir.exist?("public") and File.exists?("cv.pdf")
     FileUtils.cp("cv.pdf", "public/")
 else
