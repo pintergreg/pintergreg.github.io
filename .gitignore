@@ -4,3 +4,5 @@ resources/_gen/
 
 cv.asciidoc
 cv.pdf
+
+data/personal.yaml
