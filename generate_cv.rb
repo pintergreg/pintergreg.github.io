@@ -15,7 +15,15 @@ asciidoc = %{
 :icontype: svg
 :hide-uri-scheme:
 
-
+<% if personal %>
+[.normal]
+date of birth: <%= personal["date_of_birth"] %> |
+nationality: <%= personal["nationality"] %> |
+phone number: <%= personal["phone"] %> |
+email address: <%= personal["email"]["professional"] %>
+website: link:https://pintergreg.github.io[] |
+address: <%= personal["address"] %>
+<% end %>
 
 == contact
 
