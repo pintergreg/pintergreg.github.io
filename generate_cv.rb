@@ -7,6 +7,7 @@ config = TomlRB.parse(File.read('config.toml'))
 
 personal = YAML.load_file('data/personal.yaml', permitted_classes: [Date, DateTime])
 
+contact = false
 asciidoc = %{
 = <%= config['title'] %>
 :pdf-theme: cv_template.yml
@@ -20,11 +21,12 @@ asciidoc = %{
 date of birth: <%= personal["date_of_birth"] %> |
 nationality: <%= personal["nationality"] %> |
 phone number: <%= personal["phone"] %> |
-email address: <%= personal["email"]["professional"] %>
+email address: <%= personal["email"]["professional"] %> |
 website: link:https://pintergreg.github.io[] |
 address: <%= personal["address"] %>
 <% end %>
 
+<% if contact %>
 == contact
 
 link:https://github.com/<%= config["Params"]["github"] %>[icon:github[],title=GitHub] |
@@ -35,10 +37,11 @@ link:https://scholar.google.hu/citations?user=<%= config["Params"]["scholar"] %>
 link:https://www.researchgate.net/profile/<%= config["Params"]["researchgate"] %>[icon:researchgate[],title=ResearchGate] |
 link:https://www.linkedin.com/in/<%= config["Params"]["linkedin"] %>[icon:linkedin[],title=LinkedIn] |
 link:https://twitter.com/<%= config["Params"]["twitter"] %>[icon:twitter[],title=Twitter]
+<% end %>
 
 }
 asciidoc += File.read("public/cv/index.asciidoc")
-asciidoc += "\n"
+asciidoc += "\n\n<<< \n\n"
 asciidoc += File.read("public/publications/index.asciidoc")
 asciidoc += "\n"
 # puts ERB.new(asciidoc, trim_mode: "-").result(binding)
