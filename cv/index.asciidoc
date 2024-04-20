@@ -40,12 +40,10 @@
 == language skills
 
 
-mother tongue: Hungarian
-
-other language(s):
-
-* English
-** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] B2 (2009-06-23)
-** self-assessment: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] C1
-* Swedish
-** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] B1 (2019-11-06)
+* mother tongue: Hungarian
+* other language(s):
+** English
+*** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] B2 (2009-06-23)
+*** self-assessment: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] C1
+** Swedish
+*** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] B1 (2019-11-06)
