@@ -2,6 +2,7 @@ require 'erb'
 require 'yaml'
 require 'date'
 require 'toml-rb'
+require 'fileutils'
 
 config = TomlRB.parse(File.read('config.toml'))
 
@@ -48,4 +49,10 @@ asciidoc += "\n"
 
 File.open("cv.asciidoc", "w") do |file|
     file.write(ERB.new(asciidoc, trim_mode: "-").result(binding)) 
+end
+
+if Dir.exist?("public") and File.exists?("cv.pdf")
+    FileUtils.cp("cv.pdf", "public/")
+else
+    STDERR.puts "cv.pdf or public directory does not exist"
 end
