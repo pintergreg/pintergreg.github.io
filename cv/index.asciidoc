@@ -3,17 +3,19 @@
 === research fellow
 
 * at Corvinus University of Budapest
-** from 2022-06-01
+** ANETI Lab, Corvinus Institute of Advanced Studies
+* from 2022-06-01
 
 === university research assistant
 
 * at Óbuda University
-** from 2016-02-01 to 2022-03-31
+* from 2016-02-01 to 2022-03-31
 
 === software developer
 
 * at Institute for Computer Science and Control, Hungarian Academy of Sciences (MTA SZTAKI)
-** from 2015-10-01 to 2016-09-30
+** Department of Distributed Systems
+* from 2015-10-01 to 2016-09-30
 
 == education
 
