@@ -12,8 +12,14 @@
         <div>
             <h3 class="fs-6">{{.title}}</h3>
             <ul>
-            <li>at {{.organization.name}}</li>
-            <li>from {{.period.start}}{{- with .period.end }} to {{.}}{{- end -}}</li>
+               <li>at {{.organization.name}}
+               {{- with .organization.department -}}
+               <ul>
+               <li>{{.}}</li>
+               </ul>
+               {{- end -}}
+               </li>
+               <li>from {{.period.start}}{{- with .period.end }} to {{.}}{{- end -}}</li>
             </ul>
         </div>
         {{- end }}

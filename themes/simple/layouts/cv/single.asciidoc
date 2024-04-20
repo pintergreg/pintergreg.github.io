@@ -5,7 +5,10 @@
 === {{.title}}
 
 * at {{.organization.name}}
-** from {{.period.start}}{{- with .period.end }} to {{.}}{{- end }}
+{{- with .organization.department }}
+** {{.}}
+{{- end }}
+* from {{.period.start}}{{- with .period.end }} to {{.}}{{- end }}
 {{- end }}
 
 == education
