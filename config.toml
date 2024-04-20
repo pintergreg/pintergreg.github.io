@@ -17,13 +17,8 @@ copyright = "2024"
 
 [outputFormats]
   [outputFormats.asciidoc]
-    # baseName = "index"
     isPlainText = true
     mediaType = "text/asciidoc"
-
-# [outputs]
-#   page = ["html", "asciidoc"]
-
 
 [Params]
   github = "pintergreg"
