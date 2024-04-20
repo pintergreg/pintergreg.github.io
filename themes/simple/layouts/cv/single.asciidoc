@@ -30,23 +30,21 @@
 
 {{ "" }}
 {{- if gt (len $.Params.language_skills.mother_tongues) 1 }}
-mother tongue(s): {{ delimit $.Params.language_skills.mother_tongues ","}}
+*mother tongue(s): {{ delimit $.Params.language_skills.mother_tongues ","}}
 {{- else }}
-mother tongue: {{ delimit $.Params.language_skills.mother_tongues ","}}
+* mother tongue: {{ delimit $.Params.language_skills.mother_tongues ","}}
 {{- end }}
-{{ "" }}
 
 {{- if gt (len $.Params.language_skills.other_languages) 1}}
-other language(s):
+* other language(s):
 {{- else }}
-other language:
+* other language:
 {{- end }}
-{{ "" }}
 
 {{- range $.Params.language_skills.other_languages }}
-* {{.language}}
-** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] {{.certificate.level}} ({{.certificate.date}})
+** {{.language}}
+*** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] {{.certificate.level}} ({{.certificate.date}})
 {{- with .self_assessment }}
-** self-assessment: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] {{.}}
+*** self-assessment: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] {{.}}
 {{- end }}
 {{- end }}
