@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'erb'
 require 'yaml'
 require 'date'
@@ -9,7 +11,7 @@ config = TomlRB.parse(File.read('config.toml'))
 personal = YAML.load_file('data/personal.yaml', permitted_classes: [Date, DateTime])
 
 contact = false
-asciidoc = %{
+asciidoc = %(
 = <%= config['title'] %>
 :pdf-theme: cv_template.yml
 :icons:
@@ -40,21 +42,20 @@ link:https://www.linkedin.com/in/<%= config["Params"]["linkedin"] %>[icon:linked
 link:https://twitter.com/<%= config["Params"]["twitter"] %>[icon:twitter[],title=Twitter]
 <% end %>
 
-}
-asciidoc += File.read("public/cv/index.asciidoc")
+)
+asciidoc += File.read('public/cv/index.asciidoc')
 asciidoc += "\n\n<<< \n\n"
-asciidoc += File.read("public/publications/index.asciidoc")
+asciidoc += File.read('public/publications/index.asciidoc')
 asciidoc += "\n"
-# puts ERB.new(asciidoc, trim_mode: "-").result(binding)
 
-File.open("cv.asciidoc", "w") do |file|
-    file.write(ERB.new(asciidoc, trim_mode: "-").result(binding)) 
+File.open('cv.asciidoc', 'w') do |file|
+  file.write(ERB.new(asciidoc, trim_mode: '-').result(binding))
 end
 
-%x(asciidoctor-pdf cv.asciidoc)
+`asciidoctor-pdf cv.asciidoc`
 
-if Dir.exist?("public") and File.exists?("cv.pdf")
-    FileUtils.cp("cv.pdf", "public/")
+if Dir.exist?('public') && File.exist?('cv.pdf')
+  FileUtils.cp('cv.pdf', 'public/')
 else
-    STDERR.puts "cv.pdf or public directory does not exist"
+  warn 'cv.pdf or public directory does not exist'
 end
