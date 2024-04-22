@@ -13,6 +13,10 @@ pyaml = "^24.4.0"
 pandas = "^2.2.2"
 networkx = "^3.3"
 seaborn = "^0.13.2"
+scipy = "^1.13.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
 
 [build-system]
 requires = ["poetry-core"]
