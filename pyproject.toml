@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "convert-references"
+name = "pintergreg-github-io"
 version = "0.1.0"
 description = ""
 authors = ["pintergreg <pintergreg@gmail.com>"]
 readme = "README.md"
-packages = [{include = "convert_references"}]
+# packages = [{include = "convert_references"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 rispy = "^0.7.1"
 pyaml = "^24.4.0"
 
