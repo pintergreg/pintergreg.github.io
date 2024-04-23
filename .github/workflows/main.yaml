@@ -29,6 +29,7 @@ jobs:
         run: |
           sudo apt-get install -y hugo ruby python3 python3-poetry ruby-asciidoctor-pdf
           rm poetry.lock
+          pip install -U poetry
           poetry lock && poetry install --no-root
     # sudo gem install ref_parsers
       # - name: convert RIS to YAML (ruby)
