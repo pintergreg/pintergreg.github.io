@@ -27,7 +27,7 @@ jobs:
 
       - name: install stuff
         run: |
-          sudo apt-get install -y hugo ruby python3 python3-poetry ruby-asciidoctor-pdf
+          sudo apt-get install -y hugo ruby python3 python3-poetry ruby-asciidoctor-pdf ruby-toml-rb
           rm poetry.lock
           poetry lock && poetry install --no-root
     # sudo gem install ref_parsers
