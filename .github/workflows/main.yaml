@@ -35,13 +35,14 @@ jobs:
       #   run: ruby conv.rb
       - name: convert RIS to YAML (python)
         run: poetry run python conv.py
-      - name: generate CV
-        run: ruby generate_cv.rb
 
       - name: build site
         run: hugo
 
-      - name: Deploy
+      - name: generate CV
+        run: ruby generate_cv.rb
+
+      - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
