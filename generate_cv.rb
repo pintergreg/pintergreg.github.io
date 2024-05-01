@@ -8,7 +8,9 @@ require 'fileutils'
 
 config = TomlRB.parse(File.read('config.toml'))
 
-personal = YAML.load_file('data/personal.yaml', permitted_classes: [Date, DateTime])
+if File.exists? 'data/personal.yaml'
+  personal = YAML.load_file('data/personal.yaml', permitted_classes: [Date, DateTime])
+end
 
 contact = false
 asciidoc = %(
