@@ -42,6 +42,9 @@ jobs:
       - name: generate CV
         run: ruby generate_cv.rb
 
+      - name: build site again to include CV
+        run: hugo
+
       - name: deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
