@@ -27,7 +27,7 @@ jobs:
 
       - name: install stuff
         run: |
-          sudo apt-get install -y hugo ruby python3 python3-pip ruby-asciidoctor-pdf ruby-toml-rb
+          sudo apt-get install -y hugo ruby ruby-bundler python3 python3-pip ruby-asciidoctor-pdf ruby-toml-rb
           pip3 install rispy
         # gem install asciidoctor-pdf python3-poetry
         # rm poetry.lock
