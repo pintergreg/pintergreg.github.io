@@ -36,7 +36,8 @@ jobs:
       # - name: convert RIS to YAML (ruby)
       #   run: ruby conv.rb
       - name: convert RIS to YAML (python)
-        run: poetry run python conv.py
+        run: python3 conv.py
+        # run: poetry run python conv.py
 
       - name: build site
         run: hugo
