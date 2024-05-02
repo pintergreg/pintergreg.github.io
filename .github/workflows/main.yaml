@@ -29,6 +29,8 @@ jobs:
         run: |
           sudo apt-get install -y hugo ruby ruby-bundler python3 python3-pip ruby-asciidoctor-pdf ruby-toml-rb
           pip3 install rispy
+          bundle config set path 'venv'
+          bundle install
         # gem install asciidoctor-pdf python3-poetry
         # rm poetry.lock
         # poetry lock && poetry install --no-root
@@ -43,7 +45,7 @@ jobs:
         run: hugo
 
       - name: generate CV
-        run: ruby generate_cv.rb
+        run: bundle exec ruby generate_cv.rb
 
       - name: build site again to include CV
         run: hugo
