@@ -16,7 +16,14 @@
     <section class="mt-4">
         <h2 class="fs-5">{{ .title }}</h2>
         <div>{{.name}}, {{.date}}, {{.location}} </div>
-        <div><a href="{{.website}}">{{.website}}</a></div>
+        <div>
+        <a href="{{.website}}">{{.website}}</a>
+        
+        {{- with .slides }}
+        | <a href="{{.}}">slides</a>
+        {{- end }}
+        </div>
+        
         {{/*
         <div>
             {{ $id := .name | replaceRE " " "-" }}
