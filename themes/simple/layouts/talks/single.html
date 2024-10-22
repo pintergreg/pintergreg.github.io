@@ -6,7 +6,7 @@
 </div>
 <div class="container pb-5">
 {{ $.Scratch.Set "last_year" 3000 }}
-    {{- range (sort $.Site.Data.talks ".year" "desc") -}}
+    {{- range (sort $.Site.Data.talks ".date_for_sort" "desc") }}
     {{- if lt (int .year) ($.Scratch.Get "last_year") }}
     <div class="border-bottom">
         <div class="text-end mt-2">{{.year}}</div>
