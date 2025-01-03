@@ -1,5 +1,11 @@
 == publications
 
+=== 2024
+
+* Revealing urban area from mobile positioning data
+** Gergő Pintér
+** Scientific Reports 2024, 14 (1); link:https://doi.org/10.1038/s41598-024-82006-5[10.1038/s41598-024-82006-5]
+
 === 2023
 
 * Amenity complexity and urban locations of socio-economic mixing
