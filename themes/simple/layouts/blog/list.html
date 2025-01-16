@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" "blog" }}
+
+<div class="container mt-3">
+    <h1>posts</h1>
+</div>
+<div class="container pb-5">
+{{ range (where $.Site.RegularPages "Params.type" "eq" "blog") }}
+  <div class="border-bottom">
+    <div class="text-end mt-2">{{.Date.Format "2 January 2006"}}</div>
+  </div>
+    <section class="mt-4">
+      <h2 class="fs-5"><a href="{{.RelPermalink}}">{{ .Title }}</a></h2>
+      <p>{{ .Description }}</p>
+      {{- range .Params.tags }}
+      <span class="badge bg-secondary">{{.}}</span>
+      {{- end}}
+    </section>
+{{ end }}
+
+</div>
+{{ partial "footer.html" . }}
