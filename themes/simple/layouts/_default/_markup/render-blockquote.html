@@ -1,0 +1,25 @@
+<!--<figure>
+  <blockquote class="blockquote" {{ with .Attributes.cite }}cite="{{ . }}"{{ end }}>
+  </blockquote>
+  {{ with .Attributes.caption }}
+    <figcaption class="blockquote-caption">
+      {{ . | safeHTML }}
+    </figcaption>
+  {{ end }}
+</figure>-->
+<figure class="border-start border-secondary border-5 ps-3">
+  <blockquote class="blockquote">
+    <p>{{ .Text }}</p>
+  </blockquote>
+  {{ with .Attributes }}
+  <figcaption class="blockquote-footer">
+  {{- with .citeUrl }}
+  <a href="{{.citeUrl | safeHTML}}">
+  {{- end }}
+  {{ .caption | safeHTML }}
+  {{- with .citeUurl }}
+  <a/>
+  {{- end }}
+  </figcaption>
+  {{ end }}
+</figure>
