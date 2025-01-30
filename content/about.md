@@ -6,6 +6,6 @@ draft: false
 
 engineering information technologist, Ph.D.
 
-postdoctoral research fellow at [Laboratory for Networks, Technology & Innovation](https://www.netilab.hu/) of Corvinus University of Budapest
+postdoctoral research fellow at [ANETI Lab](https://anetilab.org/) of Corvinus University of Budapest
 
 interested in data science, data visualization, urban mobility, social sensing, computational sociology, and software engineering
