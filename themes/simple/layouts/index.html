@@ -38,7 +38,7 @@
                 <div class="carousel-inner">
                     {{- range .Params.figures}}
                     <div class="carousel-item active {{- if .border }} border{{- end -}}">
-                    <img src="images/publications/{{.filename}}" class="d-block w-100" alt="{{.description}}">
+                    <img src="images/publications/{{.filename}}" class="d-block w-100" alt="{{.description}}" title="{{.description}}">
                     </div>
                     {{- end }}
                 </div>
