@@ -47,3 +47,11 @@
 *** self-assessment: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] C1
 ** Swedish
 *** certificate: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] B1 (2019-11-06)
+
+== other certificates
+
+
+** iaijutsu
+*** level: 1st dan (2025-05-26)
+*** organization: ISBA
+*** note: Shinto Munen Ryu Tachi Iai
