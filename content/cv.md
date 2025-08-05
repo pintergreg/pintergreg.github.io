@@ -62,6 +62,12 @@ language_skills:
             level: B1
             date: 2019-11-06
           self_assessment:
+other_certificates:
+  - name: iaijutsu
+    level: 1st dan
+    date: 2025-05-26
+    organization: ISBA
+    schools: [Shinto Munen Ryu Tachi Iai]
 employment:
     - title: research fellow
       organization:

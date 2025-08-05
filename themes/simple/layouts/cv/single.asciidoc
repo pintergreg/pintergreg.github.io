@@ -48,3 +48,15 @@
 *** self-assessment: CEFRLfootnote:cefrl[Common European Framework of Reference for Languages] {{.}}
 {{- end }}
 {{- end }}
+
+== other certificates
+
+{{ "" }}
+{{- with $.Params.other_certificates}}
+{{- range . }}
+** {{.name}}
+*** level: {{.level}} ({{.date}})
+*** organization: {{.organization}}
+*** note: {{ delimit .schools ", "}}
+{{- end }}
+{{- end }}

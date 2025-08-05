@@ -86,5 +86,23 @@
             </ul>
         </div>
     </section>
+    {{- with $.Params.other_certificates}}
+    <section class="mt-4">
+        <h2 class="fs-5">Other certificates</h2>
+        <div>
+            <ul>
+                {{- range . }}
+                <li>{{.name}}
+                    <ul>
+                        <li>level: {{.level}} ({{.date}})</li>
+                        <li>organization: {{.organization}}</li>
+                        <li>note: {{ delimit .schools ", "}} </li>
+                    </ul>
+                </li>
+                {{- end }}
+            </ul>
+        </div>
+    </section>
+    {{- end }}
 </div>
 {{ partial "footer.html" . }}
