@@ -20,17 +20,17 @@
 
 * Awakening City: Traces of the Circadian Rhythm within the Mobile Phone Network Data
 ** Gergő Pintér, Imre Felde
-** Information 2022, 13 (3); link:https://doi.org/10.3390/info13030114[10.3390/info13030114]
+** Information  2022, 13 (3); link:https://doi.org/10.3390/info13030114[10.3390/info13030114]
 
 === 2021
 
 * Evaluating the Effect of the Financial Status to the Mobility Customs
 ** Gergő Pintér, Imre Felde
-** ISPRS International Journal of Geo-Information 2021, 10 (5); link:https://doi.org/10.3390/ijgi10050328[10.3390/ijgi10050328]
+** ISPRS International Journal of Geo-Information  2021, 10 (5); link:https://doi.org/10.3390/ijgi10050328[10.3390/ijgi10050328]
 
 * Analyzing the Behavior and Financial Status of Soccer Fans from a Mobile Phone Network Perspective: Euro 2016, a Case Study
 ** Gergő Pintér, Imre Felde
-** Information 2021, 12 (11); link:https://doi.org/10.3390/info12110468[10.3390/info12110468]
+** Information  2021, 12 (11); link:https://doi.org/10.3390/info12110468[10.3390/info12110468]
 
 === 2020
 
