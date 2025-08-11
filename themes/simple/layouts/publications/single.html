@@ -19,7 +19,11 @@
     {{ $.Scratch.Set "last_year" (int .PY) }}
     {{- end }}
     <section class="mt-4">
-        <h2 class="fs-5">{{ .TI }}</h2>
+        {{ $title := "" }}
+        {{- with .TI }}{{- $title = . }}{{- end}}
+        {{- with .T1 }}{{- $title = . }}{{- end}}
+
+        <h2 class="fs-5">{{ $title }}</h2>
         <div>{{ delimit (partial "restructure_names.func" .AU) ", " }}</div>
         {{- if or (eq .TY "EJOU") (eq .TY "EJOUR") }}
         <div>{{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
