@@ -4,54 +4,54 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  # pull_request:
+    # Triggers the workflow on push or pull request events but only for the "main" branch
+    push:
+        branches: ["main"]
+    # pull_request:
     # branches: [ "main" ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    # This workflow contains a single job called "build"
+    build:
+        # The type of runner that the job will run on
+        runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+        # Steps represent a sequence of tasks that will be executed as part of the job
+        steps:
+            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            - uses: actions/checkout@v4
 
-      - name: install stuff
-        run: |
-          sudo apt-get install -y hugo ruby ruby-bundler python3 python3-pip ruby-asciidoctor-pdf ruby-toml-rb
-          pip3 install rispy
-          bundle config set path 'venv'
-          bundle install
-        # gem install asciidoctor-pdf python3-poetry
-        # rm poetry.lock
-        # poetry lock && poetry install --no-root
-    # sudo gem install ref_parsers
-      # - name: convert RIS to YAML (ruby)
-      #   run: ruby conv.rb
-      - name: convert RIS to YAML (python)
-        run: python3 conv.py
-        # run: poetry run python conv.py
+            - name: install stuff
+              run: |
+                  sudo apt-get install -y hugo ruby ruby-bundler python3 python3-pip ruby-asciidoctor-pdf ruby-toml-rb pandoc
+                  pip3 install rispy
+                  bundle config set path 'venv'
+                  bundle install
+              # gem install asciidoctor-pdf python3-poetry
+              # rm poetry.lock
+              # poetry lock && poetry install --no-root
+            # sudo gem install ref_parsers
+            # - name: convert RIS to YAML (ruby)
+            #   run: ruby conv.rb
+            - name: convert RIS to YAML (python)
+              run: python3 conv.py
+              # run: poetry run python conv.py
 
-      - name: build site
-        run: hugo
+            - name: build site
+              run: hugo
 
-      - name: generate CV
-        run: bundle exec ruby generate_cv.rb
+            - name: generate CV
+              run: bundle exec ruby generate_cv.rb
 
-      - name: build site again to include CV
-        run: hugo
+            - name: build site again to include CV
+              run: hugo
 
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./public
+            - name: deploy
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
+                  publish_dir: ./public
