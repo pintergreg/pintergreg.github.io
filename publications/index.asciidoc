@@ -1,5 +1,11 @@
 == publications
 
+=== 2025
+
+* <no value>
+** Gergő Pintér, Balázs Lengyel
+** Cities 2025, 167 (<no value>); link:https://doi.org/https://doi.org/10.1016/j.cities.2025.106322[https://doi.org/10.1016/j.cities.2025.106322]
+
 === 2024
 
 * Revealing urban area from mobile positioning data
