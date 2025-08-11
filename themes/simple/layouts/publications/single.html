@@ -25,7 +25,7 @@
         <div>{{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
         {{- end }}
         {{- if eq .TY "JOUR" }}
-        <div>{{.JO}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
+        <div>{{.JO}} {{.PY}}, {{.VL}}{{with .IS }} ({{.}}){{end}}; <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
         {{- end }}
 
         <div>
