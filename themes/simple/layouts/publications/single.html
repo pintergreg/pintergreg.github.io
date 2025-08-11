@@ -22,14 +22,18 @@
         {{ $title := "" }}
         {{- with .TI }}{{- $title = . }}{{- end}}
         {{- with .T1 }}{{- $title = . }}{{- end}}
+        {{- $doi_url := .DO}}
+        {{- if not (hasPrefix $doi_url "https://doi.org/") }}
+        {{- $doi_url = (printf "https://doi.org/%s" .DO) | safeURL}}
+        {{- end }}
 
         <h2 class="fs-5">{{ $title }}</h2>
         <div>{{ delimit (partial "restructure_names.func" .AU) ", " }}</div>
         {{- if or (eq .TY "EJOU") (eq .TY "EJOUR") }}
-        <div>{{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
+        <div>{{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="{{$doi_url}}">{{strings.TrimPrefix "https://doi.org/" .DO}}</a></div>
         {{- end }}
         {{- if eq .TY "JOUR" }}
-        <div>{{.JO}} {{.PY}}, {{.VL}}{{with .IS }} ({{.}}){{end}}; <a href="https://doi.org/{{.DO}}">{{.DO}}</a></div>
+        <div>{{.JO}} {{.PY}}, {{.VL}}{{with .IS }} ({{.}}){{end}}; <a href="{{$doi_url}}">{{strings.TrimPrefix "https://doi.org/" .DO}}</a></div>
         {{- end }}
 
         <div>
