@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" "for_students" }}
+
+<div class="container mt-3 border bg-white">
+    <h2>{{ .Title | title }}</h2>
+    <div>
+<!--     <span class="badge bg-info">{{.Date.Format "2006-01-02"}}</span> -->
+    {{- range .Params.tags }}
+      <span class="badge bg-secondary">{{.}}</span>
+    {{- end}}
+    </div>
+
+    <div class="container pb-5 mt-4">
+    {{.Content}}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

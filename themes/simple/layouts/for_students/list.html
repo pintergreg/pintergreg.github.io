@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+{{ partial "nav.html" "for_students" }}
+
+<div class="container mt-3">
+    <h1>topics for students</h1>
+</div>
+<div class="container pb-5">
+{{ range (where $.Site.RegularPages "Params.type" "eq" "for_students") }}
+  <div class="border-bottom">
+<!--     <div class="text-end mt-2">{{.Date.Format "2 January 2006"}}</div> -->
+    <div class="text-end mt-2">{{.Params.level}}</div>
+  </div>
+    <section class="mt-4">
+      <h2 class="fs-5"><a href="{{.RelPermalink}}">{{ .Title | title }}</a></h2>
+      <p>{{ .Description }}</p>
+      {{- range .Params.tags }}
+      <span class="badge bg-secondary">{{.}}</span>
+      {{- end}}
+    </section>
+{{ end }}
+
+</div>
+{{ partial "footer.html" . }}
