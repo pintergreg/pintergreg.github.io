@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization on Gergő Pintér</title>
+    <link>/tags/visualization/</link>
+    <description>Recent content in Visualization on Gergő Pintér</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2024</copyright>
+    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artistic visualizations of spatiotemporal data: telling a story of a city with data</title>
+      <link>/for_students/visualizing_spatiotemporal_data/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/for_students/visualizing_spatiotemporal_data/</guid>
+      <description>Urban mobility and city structure are complex, dynamic phenomena that can be effectively analyzed through spatiotemporal data. This project seeks to explore artistic visualizations of such data to reveal patterns of movement, spatial interactions, and urban dynamics. By blending data science with artistic design, this research will examine how visual representations can enhance our understanding of urban spaces.&#xA;With the growing significance of data science, the data visualization and data-based story-telling is also emerging.</description>
+    </item>
+  </channel>
+</rss>

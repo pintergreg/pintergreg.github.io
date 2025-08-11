@@ -7,6 +7,56 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>2024</copyright>
+    <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mobility Data</title>
+      <link>/tags/mobility-data/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/mobility-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Storytelling With Data</title>
+      <link>/tags/storytelling-with-data/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/storytelling-with-data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Visualization</title>
+      <link>/tags/visualization/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Urban Mobility</title>
+      <link>/tags/urban-mobility/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/urban-mobility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inequality</title>
+      <link>/tags/inequality/</link>
+      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/inequality/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Public Transport</title>
+      <link>/tags/public-transport/</link>
+      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/public-transport/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

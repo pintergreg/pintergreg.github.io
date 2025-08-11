@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Urban Mobility on Gergő Pintér</title>
+    <link>/tags/urban-mobility/</link>
+    <description>Recent content in Urban Mobility on Gergő Pintér</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>2024</copyright>
+    <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/urban-mobility/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Human mobility prediction based on mobility patterns and socioeconomic background </title>
+      <link>/for_students/human_mobility_prediction/</link>
+      <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/for_students/human_mobility_prediction/</guid>
+      <description>introduction Human mobility is a fundamental aspect of social life, influencing urban planning, transportation systems, and socioeconomic dynamics. The increasing availability of large-scale mobility data from mobile devices, GPS trackers, and social media has enabled computational social scientists to analyze and predict movement patterns with unprecedented accuracy. This project aims to develop and evaluate computational models for human mobility prediction with machine learning techniques and investigate the extent to which mobility patterns can be used for socioeconomic profiling.</description>
+    </item>
+    <item>
+      <title>Assessing Inequality in Public Transport Accessibility: A Socio-Spatial Analysis</title>
+      <link>/for_students/inequality_in_public_transport/</link>
+      <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>/for_students/inequality_in_public_transport/</guid>
+      <description>abstract Public transport systems are vital for urban mobility, yet disparities in accessibility can contribute to social and economic inequalities. This study aims to evaluate the extent to which public transport accessibility influences inequality, with a particular focus on socioeconomically disadvantaged populations. By integrating geospatial analysis with socioeconomic data, this research seeks to identify disparities in transport accessibility and their broader implications.&#xA;introduction Public transport is a crucial component of urban infrastructure, providing mobility to millions of people worldwide.</description>
+    </item>
+  </channel>
+</rss>
