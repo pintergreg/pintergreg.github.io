@@ -3,6 +3,9 @@ title: "about"
 date: 2022-07-16T09:30:57+02:00
 draft: false
 figures:
+    - filename: pinter2025quantifying.png
+      border: true
+      description: "Gergő Pintér and Balázs Lengyel, Quantifying barriers of urban mobility, Cities 167, 106322 (2025)"
     - filename: pinter2024revealing.png
       border: true
       description: "Gergő Pintér, Revealing urban area from mobile positioning data, Sci Rep 14, 30948 (2024)"
