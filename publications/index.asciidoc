@@ -1,10 +1,10 @@
-== publications
+== latest publications
 
 === 2025
 
-* <no value>
+* Quantifying barriers of urban mobility
 ** Gergő Pintér, Balázs Lengyel
-** Cities 2025, 167 (<no value>); link:https://doi.org/https://doi.org/10.1016/j.cities.2025.106322[https://doi.org/10.1016/j.cities.2025.106322]
+** Cities 2025, 167; link:https://doi.org/10.1016/j.cities.2025.106322[10.1016/j.cities.2025.106322]
 
 === 2024
 
@@ -15,31 +15,15 @@
 === 2023
 
 * Amenity complexity and urban locations of socio-economic mixing
-** Sándor Juhász, Gergő Pintér, Ádám J. Kovács, Endre Borza, Gergely Mónus, László Lőrincz, Balázs Lengyel
+** Sándor Juhász, Gergő Pintér, Ádám Kovács, Endre Borza, Gergely Mónus, László Lőrincz, Balázs Lengyel
 ** EPJ Data Science 2023, 12 (1); link:https://doi.org/10.1140/epjds/s13688-023-00413-6[10.1140/epjds/s13688-023-00413-6]
 
 === 2022
 
+* Awakening City: Traces of the Circadian Rhythm within the Mobile Phone Network Data
+** Gergő Pintér, Imre Felde
+** Information 2022, 13 (3); link:https://doi.org/10.3390/info13030114[10.3390/info13030114]
+
 * Commuting Analysis of the Budapest Metropolitan Area Using Mobile Network Data
 ** Gergő Pintér, Imre Felde
 ** ISPRS International Journal of Geo-Information 2022, 11 (9); link:https://doi.org/10.3390/ijgi11090466[10.3390/ijgi11090466]
-
-* Awakening City: Traces of the Circadian Rhythm within the Mobile Phone Network Data
-** Gergő Pintér, Imre Felde
-** Information  2022, 13 (3); link:https://doi.org/10.3390/info13030114[10.3390/info13030114]
-
-=== 2021
-
-* Evaluating the Effect of the Financial Status to the Mobility Customs
-** Gergő Pintér, Imre Felde
-** ISPRS International Journal of Geo-Information  2021, 10 (5); link:https://doi.org/10.3390/ijgi10050328[10.3390/ijgi10050328]
-
-* Analyzing the Behavior and Financial Status of Soccer Fans from a Mobile Phone Network Perspective: Euro 2016, a Case Study
-** Gergő Pintér, Imre Felde
-** Information  2021, 12 (11); link:https://doi.org/10.3390/info12110468[10.3390/info12110468]
-
-=== 2020
-
-* Artificial Intelligence for Modeling Real Estate Price Using Call Detail Records and Hybrid Machine Learning Approach
-** Gergő Pinter, Amir Mosavi, Imre Felde
-** Entropy 2020, 22 (12); link:https://doi.org/10.3390/e22121421[10.3390/e22121421]
