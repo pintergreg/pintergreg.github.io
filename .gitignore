@@ -10,3 +10,5 @@ data/personal.yaml
 # ruby venv
 venv/
 .bundle/
+
+Gemfile.lock
