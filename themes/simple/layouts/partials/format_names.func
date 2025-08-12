@@ -1,0 +1,5 @@
+{{ $result := (slice) }}
+{{- range . }}
+    {{ $result = $result | append (printf "%s %s" .given .family) }}
+{{- end -}}
+{{return $result }}

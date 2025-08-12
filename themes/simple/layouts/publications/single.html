@@ -6,49 +6,38 @@
 </div>
 <div class="container pb-5">
 {{ $papers := slice }}
-{{ range $.Site.Data.ris }}
+{{ range $.Site.Data.publications }}
   {{ $papers = $papers | append . }}
 {{ end }}
 
 {{- $.Scratch.Set "last_year" 3000 }}
-    {{- range (sort (where $papers "TY" "ne" "MANSCPT") ".PY" "desc") -}}
-    {{- if lt (int .PY) ($.Scratch.Get "last_year") }}
+    {{- range (sort (where $papers "type" "ne" "preprint") ".year" "desc") -}}
+    {{- if lt (int .year) ($.Scratch.Get "last_year") }}
     <div class="border-bottom">
-        <div class="text-end mt-2">{{.PY}}</div>
+        <div class="text-end mt-2">{{.year}}</div>
     </div>
-    {{ $.Scratch.Set "last_year" (int .PY) }}
+    {{ $.Scratch.Set "last_year" (int .year) }}
     {{- end }}
     <section class="mt-4">
-        {{ $title := "" }}
-        {{- with .TI }}{{- $title = . }}{{- end}}
-        {{- with .T1 }}{{- $title = . }}{{- end}}
-        {{- $doi_url := .DO}}
-        {{- if not (hasPrefix $doi_url "https://doi.org/") }}
-        {{- $doi_url = (printf "https://doi.org/%s" .DO) | safeURL}}
-        {{- end }}
-
-        <h2 class="fs-5">{{ $title }}</h2>
-        <div>{{ delimit (partial "restructure_names.func" .AU) ", " }}</div>
-        {{- if or (eq .TY "EJOU") (eq .TY "EJOUR") }}
-        <div>{{.T2}} {{.PY}}, {{.VL}} ({{.IS}}); <a href="{{$doi_url}}">{{strings.TrimPrefix "https://doi.org/" .DO}}</a></div>
-        {{- end }}
-        {{- if eq .TY "JOUR" }}
-        <div>{{.JO}} {{.PY}}, {{.VL}}{{with .IS }} ({{.}}){{end}}; <a href="{{$doi_url}}">{{strings.TrimPrefix "https://doi.org/" .DO}}</a></div>
+        <h2 class="fs-5">{{ .title }}</h2>
+        <div>{{ delimit (partial "format_names.func" .authors) ", " }}</div>
+        {{- if eq .type "journal" }}
+        <div>{{.journal}} {{.year}}, {{.volume}}{{with .issue }} ({{.}}){{end}}; <a href="https://doi.org/{{.doi}}">{{.doi}}</a></div>
         {{- end }}
 
         <div>
-            {{ $id := .DO | replaceRE "\\.|/" "-" }}
+            {{ $id := .doi | replaceRE "\\.|/" "-" }}
             <span class="badge bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{$id}}" aria-expanded="false" aria-controls="collapse-{{$id}}">
                 abstract
             </span>
             <div class="collapse" id="collapse-{{$id}}">
                 <div class="card card-body">
-                {{.AB}}
+                {{.abstract}}
                 </div>
             </div>
         </div>
          <div class="fs-6">
-            {{- range .KW }}
+            {{- range .keywords }}
         <span class="badge bg-secondary">{{.}}</span>
         {{- end}}
         </div>

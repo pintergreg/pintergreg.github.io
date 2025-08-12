@@ -1,0 +1,38 @@
+id: pinter2021evaluating
+title: Evaluating the Effect of the Financial Status to the Mobility Customs
+authors:
+    - given: Gergő
+      family: Pintér
+      orcid: 0000-0003-4731-3816
+    - given: Imre
+      family: Felde
+      orcid: 0000-0003-4126-2480
+type: journal
+journal: ISPRS International Journal of Geo-Information
+issn: 2220-9964
+year: 2021
+volume: 10
+issue: 5
+pages: 328
+date: 2021-05-13
+abstract: |
+    In this article, we explore the relationship between cellular phone data and housing
+    prices in Budapest, Hungary. We determine mobility indicators from one months of
+    Call Detail Records (CDR) data, while the property price data are used to characterize
+    the socioeconomic status at the Capital of Hungary. First, we validated the proposed
+    methodology by comparing the Home and Work locations estimation and the commuting
+    patterns derived from the cellular network dataset with reports of the national
+    mini census. We investigated the statistical relationships between mobile phone
+    indicators, such as Radius of Gyration, the distance between Home and Work locations
+    or the Entropy of visited cells, and measures of economic status based on housing
+    prices. Our findings show that the mobility correlates significantly with the socioeconomic
+    status. We performed Principal Component Analysis (PCA) on combined vectors of mobility
+    indicators in order to characterize the dependence of mobility habits on socioeconomic
+    status. The results of the PCA investigation showed remarkable correlation of housing
+    prices and mobility customs.
+doi: 10.3390/ijgi10050328
+url: "https://www.mdpi.com/2220-9964/10/5/328"
+keywords:
+    - mobile phone data
+    - human mobility
+    - socioeconomic characteristics
