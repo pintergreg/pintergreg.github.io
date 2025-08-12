@@ -31,15 +31,8 @@ jobs:
                   pip3 install rispy
                   bundle config set path 'venv'
                   bundle install
-              # gem install asciidoctor-pdf python3-poetry
-              # rm poetry.lock
-              # poetry lock && poetry install --no-root
-            # sudo gem install ref_parsers
-            # - name: convert RIS to YAML (ruby)
-            #   run: ruby conv.rb
             - name: convert RIS to YAML (python)
               run: python3 conv.py
-              # run: poetry run python conv.py
 
             - name: build site
               run: hugo
