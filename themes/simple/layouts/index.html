@@ -13,11 +13,17 @@
                     {{- with $.Site.Params.github }}
                         <a href="https://github.com/{{$.Site.Params.github}}" class="text-dark" title="GitHub"><i class="fs-1 fa-brands fa-github"></i></a>
                     {{- end }}
+                    {{- with $.Site.Params.gitlab }}
+                        <a href="https://github.com/{{$.Site.Params.github}}" class="text-dark" title="GitHub"><i class="fs-1 fa-brands fa-gitlab"></i></a>
+                    {{- end }}
                     {{- with $.Site.Params.hackerrank }}
                         <a href="https://www.hackerrank.com/profile/{{$.Site.Params.hackerrank}}" class="text-dark" title="HackerRank"><i class="fs-1 fa-brands fa-hackerrank"></i></a>
                     {{- end }}
                     {{- with $.Site.Params.twitter }}
                         <a href="https://twitter.com/{{$.Site.Params.twitter}}" class="text-dark" title="Twitter"><i class="fs-1 fa-brands fa-twitter"></i></a>
+                    {{- end }}
+                    {{- with $.Site.Params.bluesky }}
+                        <a href="{{$.Site.Params.bluesky}}" class="text-dark" title="Twitter"><i class="fs-1 fa-brands fa-bluesky"></i></a>
                     {{- end }}
                     {{- with $.Site.Params.orcid }}
                         <a href="https://orcid.org/{{$.Site.Params.orcid}}" class="text-dark" title="ORCiD"><i class="fs-1 fa-brands fa-orcid"></i></a>
