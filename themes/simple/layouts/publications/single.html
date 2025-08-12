@@ -35,6 +35,11 @@
                 {{.abstract}}
                 </div>
             </div>
+            {{- with .summary}}
+            <a class="badge bg-primary link-underline-primary link-underline-opacity-0" type="button" href="{{.}}" target="_blank">
+                summary <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            {{- end}}
         </div>
          <div class="fs-6">
             {{- range .keywords }}
