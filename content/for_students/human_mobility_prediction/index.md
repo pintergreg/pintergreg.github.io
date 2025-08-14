@@ -48,6 +48,7 @@ By bridging mobility prediction with socioeconomic profiling, this study will pr
 - map data from OpenStreetMap including amenities
 - YJMob100K mobility data
 - demographic data from the Japanese statistical office at municipality level including taxable income, number of households, etc.
+- potentially, weather data from https://open-meteo.com/
 
 This project requires strong Python (alternatively R, Julia, etc.) skills.
 It is good to have experience plotting tools (matplotlib, seaborn or ggplot2/R, Gadfly/Julia, etc.), and willingness to work with machine learning algorithms.
@@ -59,3 +60,4 @@ It is good to have experience plotting tools (matplotlib, seaborn or ggplot2/R, 
 3. G. Pintér, “Revealing urban area from mobile positioning data,” Scientific Reports, vol. 14, no. 1, p. 30948, 2024.
 4. S. Juhász et al., “Amenity complexity and urban locations of socio-economic mixing,” EPJ Data Science, vol. 12, no. 1, p. 34, 2023.
 5. T. Yabe, B. García Bulle Bueno, M. R. Frank, A. Pentland, and E. Moro, “Behaviour-based dependency networks between places shape urban economic resilience,” Nature human behaviour, pp. 1–11, 2024.
+6. Mishra, A. K., Cunche, M., & Arcolezi, H. H. (2025). Breaking Anonymity at Scale: Re-identifying the Trajectories of 100K Real Users in Japan. arXiv preprint [arXiv:2506.05611](https://arxiv.org/abs/2506.05611#).
