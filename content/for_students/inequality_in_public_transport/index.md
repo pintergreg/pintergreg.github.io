@@ -58,13 +58,18 @@ This study will contribute to the discourse on transport equity and provide acti
 ### the project uses open data about Helsinki
 
 - map data from OpenStreetMap including amenities
-- GTFS describing the timetable of the public transport
-- temporal population density data describing the hourly population distribution in Helsinki
-- demographic data from the Finnish statistical office at postal code area level including income categories, education level and much more
-- origin destination trips from the HSL city bike service (Helsinki and Espoo)
+- GTFS describing the timetable of the public transport [^hsl]
+- temporal population density data describing the hourly population distribution in Helsinki [^tpdd]
+- demographic data from the Finnish statistical office at postal code area level including income categories, education level and much more [^stat]
+- origin destination trips from the HSL city bike service (Helsinki and Espoo) [^hsl]
+- weather data from [open-meteo.com](https://open-meteo.com/)
 
 This project requires intermediate Python (alternatively R, Julia, etc.) skills.
 It is good to have experience with plotting tools (matplotlib, seaborn or ggplot2/R, Gadfly/Julia, etc.), also regarding spatial data.
+
+[^hsl]: https://www.hsl.fi/en/hsl/open-data
+[^tpdd]: https://zenodo.org/records/6106064
+[^stat]: https://stat.fi/tup/paavo/paavon_aineistokuvaukset_en.html
 
 ### references
 

@@ -41,9 +41,9 @@ Some visualisations as an inspiration:
 - map data from OpenStreetMap including amenities
 - GTFS describing the timetable of the public transport [^hsl]
 - temporal population density data describing the hourly population distribution in Helsinki [^tpdd]
-- demographic data from the Finnish statistical office [^stat] at postal code area level including income categories, education level and much more
+- demographic data from the Finnish statistical office at postal code area level including income categories, education level and much more [^stat]
 - origin destination trips from the HSL city bike service (Helsinki and Espoo) [^hsl]
-- weather data from [open-meteo.com](https://open-meteo.com/)
+- optionally, weather data from [open-meteo.com](https://open-meteo.com/)
 
 This project requires intermediate Python (alternatively R, Julia, etc.) skills, aesthetic sense and creativeness.
 It is good to have experience with spatiotemporal data and plotting packages (matplotlib, seaborn or d3.js, ggplot2/R, Gadfly/Julia, etc.).
