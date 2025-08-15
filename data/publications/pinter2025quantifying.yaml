@@ -30,7 +30,7 @@ abstract: |
     These results contribute to the ongoing discourse on urban segregation, emphasizing the importance of barriers to urban mobility in shaping interactions and mixing.
 doi: 10.1016/j.cities.2025.106322
 url: "https://www.sciencedirect.com/science/article/pii/S0264275125006237"
-summary:
+summary: "https://pintergreg.github.io/quantifying-barriers-of-urban-mobility/"
 code_repository: "https://github.com/pintergreg/quantifying-barriers-of-urban-mobility"
 keywords:
     - mobile positioning data
