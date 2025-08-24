@@ -55,6 +55,30 @@
         </div>
     </section>
     <section class="mt-4">
+        <h2 class="fs-5">Awards and honors</h2>
+        <div>
+            {{- range .Site.Data.awards }}
+            <div>
+                <h3 class="fs-6">{{.name}} ({{.year}})</h3>
+                <ul>
+                    <li>
+                        description: {{.description}}
+                    </li>
+                    {{- $collaborators := slice}}
+                    {{- range .collaborators}}
+                    {{- $collaborators = $collaborators | append (printf "%s (%s)" .name .affiliation)}}
+                    {{- end}}
+                    {{- with .collaborators}}
+                    <li>
+                        collaborators: {{delimit $collaborators ", " }}
+                    </li>
+                    {{- end}}
+                </ul>
+            </div>
+            {{- end }}
+        </div>
+    </section>
+    <section class="mt-4">
         <h2 class="fs-5">Language skills</h2>
         <div>
             {{- if gt (len $.Params.language_skills.mother_tongues) 1}}
