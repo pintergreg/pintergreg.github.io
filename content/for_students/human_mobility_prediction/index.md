@@ -48,7 +48,7 @@ By bridging mobility prediction with socioeconomic profiling, this study will pr
 - map data from OpenStreetMap including amenities
 - YJMob100K mobility data
 - demographic data from the Japanese statistical office at municipality level including taxable income, number of households, etc.
-- potentially, weather data from https://open-meteo.com/
+- potentially, weather data from [open-meteo.com](https://open-meteo.com/)
 
 This project requires strong Python (alternatively R, Julia, etc.) skills.
 It is good to have experience plotting tools (matplotlib, seaborn or ggplot2/R, Gadfly/Julia, etc.), and willingness to work with machine learning algorithms.
