@@ -46,12 +46,16 @@ By bridging mobility prediction with socioeconomic profiling, this study will pr
 ### the project uses open data about Nagoya Metropolitan Area
 
 - map data from OpenStreetMap including amenities
-- YJMob100K mobility data
-- demographic data from the Japanese statistical office at municipality level including taxable income, number of households, etc.
+- YJMob100K mobility data [^yjmob100k], and its area [^grid]
+- demographic data from the Japanese statistical office at municipality level[^stat] including taxable income, number of households, etc. 
 - potentially, weather data from [open-meteo.com](https://open-meteo.com/)
 
 This project requires strong Python (alternatively R, Julia, etc.) skills.
 It is good to have experience plotting tools (matplotlib, seaborn or ggplot2/R, Gadfly/Julia, etc.), and willingness to work with machine learning algorithms.
+
+[^yjmob100k]: https://zenodo.org/records/10836269
+[^grid]: https://github.com/pintergreg/reverse-engineering-YJMob100K-grid
+[^stat]: https://www.e-stat.go.jp/en/regional-statistics/ssdsview/municipality
 
 ### references
 
