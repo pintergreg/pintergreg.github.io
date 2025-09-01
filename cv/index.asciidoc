@@ -4,6 +4,7 @@
 
 * at Corvinus University of Budapest
 ** ANETI Lab, Corvinus Institute of Advanced Studies
+** Institute of Data Analytics and Information Systems
 * from 2022-06-01
 
 === university research assistant
