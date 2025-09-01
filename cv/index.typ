@@ -1,6 +1,8 @@
 = Gergő Pintér
 
-Corvinus Institute of Advanced Studies and Institute of Data Analytics and Information Systems, Corvinus University of Budapest, 1093, 8 Fővám tér, Budapest, Hungarywebsite: #link("https://pintergreg.github.io")[pintergreg.github.io] | ORCiD: #link("https://orcid.org/0000-0003-4731-3816")[0000-0003-4731-3816]
+Corvinus Institute of Advanced Studies and Institute of Data Analytics and Information Systems, Corvinus University of Budapest, 1093, 8 Fővám tér, Budapest, Hungary
+
+website: #link("https://pintergreg.github.io")[pintergreg.github.io] | ORCiD: #link("https://orcid.org/0000-0003-4731-3816")[0000-0003-4731-3816]
 
 == employment
 
