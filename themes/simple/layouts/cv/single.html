@@ -64,6 +64,9 @@
                 <li>at {{.university}} ({{.from}}&ndash;{{ with .to }}{{.}}{{end}})</li>
                 <li>semester: {{.semester}}</li>
                 <li>in {{.language}}</li>
+                {{- with .materials}}
+                <li><a href="{{.}}">online materials</a></li>
+                {{- end}}
                 {{- with .note}}
                 <li>{{.}}</li>
                 {{- end}}
