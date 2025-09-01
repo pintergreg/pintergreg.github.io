@@ -1,5 +1,9 @@
 = Gergő Pintér
 
+Corvinus Institute of Advanced Studies and Institute of Data Analytics and Information Systems, Corvinus University of Budapest, 1093, 8 Fővám tér, Budapest, Hungary
+
+{{- with (getenv "EMAIL")}}e-mail: {{getenv "EMAIL"}} | {{- end}}website: #link("https://{{$.Site.Params.website}}")[{{$.Site.Params.website}}] | ORCiD: #link("https://orcid.org/{{$.Site.Params.orcid}}")[{{$.Site.Params.orcid}}]
+
 == employment
 
 {{- range $.Params.employment }}

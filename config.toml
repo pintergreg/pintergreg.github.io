@@ -37,6 +37,9 @@ copyright = "2025"
   scholar = "801sS3AAAAAJ"
   website = "pintergreg.github.io"
 
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_", "^CI$", "^USER$", "^HOME$", "^EMAIL$"]
 
 # requires Hugo 0.41 or higher
 [privacy]
