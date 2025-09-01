@@ -57,13 +57,10 @@
     <section class="mt-4">
         <h2 class="fs-5">Awards and honors</h2>
         <div>
-            {{- range .Site.Data.awards }}
+            {{- range $idx, $e := .Site.Data.awards }}
             <div>
-                <h3 class="fs-6">{{.name}} ({{.year}})</h3>
+                <h3 class="fs-6"><abbr title="{{.description}}">{{.name}}</abbr> ({{.year}})</h3>
                 <ul>
-                    <li>
-                        description: {{.description}}
-                    </li>
                     {{- $collaborators := slice}}
                     {{- range .collaborators}}
                     {{- $collaborators = $collaborators | append (printf "%s (%s)" .name .affiliation)}}
