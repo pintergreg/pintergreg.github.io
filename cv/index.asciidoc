@@ -38,6 +38,17 @@
 * EQFfootnote:eqf[European Qualifications Framework] level: 6
 * thesis: Support for Nature Inspired Coordination Models
 
+== teaching experience
+* Software Engineering (INIR033NAMB)
+** at Corvinus University of Budapest (2024--)
+** semester: fall
+** in English
+* Software Engineering at Multinational Companies (NAISF1SVND)
+** at Óbuda University (2017--2021)
+** semester: spring, fall
+** in Hungarian
+** in association with Robert Bosch Ltd., responsible for practicals and project assignments
+
 == language skills
 
 
