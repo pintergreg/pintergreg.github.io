@@ -5,7 +5,7 @@
 === {{.title}}
 
 * at {{.organization.name}}
-{{- with .organization.department }}
+{{- range .organization.department }}
 ** {{.}}
 {{- end }}
 * from {{.period.start}}{{- with .period.end }} to {{.}}{{- end }}

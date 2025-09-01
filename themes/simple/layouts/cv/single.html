@@ -17,11 +17,11 @@
                 <h3 class="fs-6">{{.title}}</h3>
                 <ul>
                     <li>at {{.organization.name}}
-                        {{- with .organization.department -}}
                         <ul>
+                        {{- range .organization.department -}}
                             <li>{{.}}</li>
-                        </ul>
                         {{- end -}}
+                        </ul>
                     </li>
                     <li>from {{.period.start}}{{- with .period.end }} to {{.}}{{- end -}}</li>
                 </ul>

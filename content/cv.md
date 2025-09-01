@@ -77,7 +77,9 @@ employment:
         country: Hungary
         postcode: 1093
         web: https://www.uni-corvinus.hu/?lang=en
-        department: ANETI Lab, Corvinus Institute of Advanced Studies
+        department: 
+          - ANETI Lab, Corvinus Institute of Advanced Studies
+          - Institute of Data Analytics and Information Systems
       period:
         start: 2022-06-01
         end:
@@ -105,7 +107,8 @@ employment:
         country: Hungary
         postcode: 1111
         web: https://www.sztaki.hu/en/science/departments/dsd
-        department: Department of Distributed Systems
+        department: 
+          - Department of Distributed Systems
       period:
         start: 2015-10-01
         end: 2016-09-30
