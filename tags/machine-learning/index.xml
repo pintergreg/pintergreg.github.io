@@ -4,7 +4,7 @@
     <title>Machine Learning on Gergő Pintér</title>
     <link>/tags/machine-learning/</link>
     <description>Recent content in Machine Learning on Gergő Pintér</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <copyright>2025</copyright>
     <lastBuildDate>Tue, 18 Mar 2025 00:00:00 +0000</lastBuildDate>
@@ -14,7 +14,7 @@
       <link>/for_students/human_mobility_prediction/</link>
       <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
       <guid>/for_students/human_mobility_prediction/</guid>
-      <description>introduction Human mobility is a fundamental aspect of social life, influencing urban planning, transportation systems, and socioeconomic dynamics. The increasing availability of large-scale mobility data from mobile devices, GPS trackers, and social media has enabled computational social scientists to analyze and predict movement patterns with unprecedented accuracy. This project aims to develop and evaluate computational models for human mobility prediction with machine learning techniques and investigate the extent to which mobility patterns can be used for socioeconomic profiling.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;introduction&lt;/h3&gt;&#xA;&lt;p&gt;Human mobility is a fundamental aspect of social life, influencing urban planning, transportation systems, and socioeconomic dynamics. The increasing availability of large-scale mobility data from mobile devices, GPS trackers, and social media has enabled computational social scientists to analyze and predict movement patterns with unprecedented accuracy. This project aims to develop and evaluate computational models for human mobility prediction with machine learning techniques and investigate the extent to which mobility patterns can be used for socioeconomic profiling.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <title>Gergő Pintér</title>
     <link>/</link>
     <description>Recent content on Gergő Pintér</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <copyright>2025</copyright>
     <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate>
@@ -14,21 +14,21 @@
       <link>/for_students/visualizing_spatiotemporal_data/</link>
       <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
       <guid>/for_students/visualizing_spatiotemporal_data/</guid>
-      <description>Urban mobility and city structure are complex, dynamic phenomena that can be effectively analyzed through spatiotemporal data. This project seeks to explore artistic visualizations of such data to reveal patterns of movement, spatial interactions, and urban dynamics. By blending data science with artistic design, this research will examine how visual representations can enhance our understanding of urban spaces.&#xA;With the growing significance of data science, the data visualization and data-based story-telling is also emerging.</description>
+      <description>&lt;p&gt;Urban mobility and city structure are complex, dynamic phenomena that can be effectively analyzed through spatiotemporal data. This project seeks to explore artistic visualizations of such data to reveal patterns of movement, spatial interactions, and urban dynamics. By blending data science with artistic design, this research will examine how visual representations can enhance our understanding of urban spaces.&lt;/p&gt;&#xA;&lt;p&gt;With the growing significance of data science, the data visualization and data-based story-telling is also emerging.&#xA;It also utilized more and more as a part of the data journalism (e.g., [1], [2], [3]).&lt;/p&gt;</description>
     </item>
     <item>
       <title>Human mobility prediction based on mobility patterns and socioeconomic background </title>
       <link>/for_students/human_mobility_prediction/</link>
       <pubDate>Tue, 18 Mar 2025 00:00:00 +0000</pubDate>
       <guid>/for_students/human_mobility_prediction/</guid>
-      <description>introduction Human mobility is a fundamental aspect of social life, influencing urban planning, transportation systems, and socioeconomic dynamics. The increasing availability of large-scale mobility data from mobile devices, GPS trackers, and social media has enabled computational social scientists to analyze and predict movement patterns with unprecedented accuracy. This project aims to develop and evaluate computational models for human mobility prediction with machine learning techniques and investigate the extent to which mobility patterns can be used for socioeconomic profiling.</description>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;introduction&lt;/h3&gt;&#xA;&lt;p&gt;Human mobility is a fundamental aspect of social life, influencing urban planning, transportation systems, and socioeconomic dynamics. The increasing availability of large-scale mobility data from mobile devices, GPS trackers, and social media has enabled computational social scientists to analyze and predict movement patterns with unprecedented accuracy. This project aims to develop and evaluate computational models for human mobility prediction with machine learning techniques and investigate the extent to which mobility patterns can be used for socioeconomic profiling.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Assessing Inequality in Public Transport Accessibility: A Socio-Spatial Analysis</title>
       <link>/for_students/inequality_in_public_transport/</link>
       <pubDate>Fri, 14 Mar 2025 00:00:00 +0000</pubDate>
       <guid>/for_students/inequality_in_public_transport/</guid>
-      <description>abstract Public transport systems are vital for urban mobility, yet disparities in accessibility can contribute to social and economic inequalities. This study aims to evaluate the extent to which public transport accessibility influences inequality, with a particular focus on socioeconomically disadvantaged populations. By integrating geospatial analysis with socioeconomic data, this research seeks to identify disparities in transport accessibility and their broader implications.&#xA;introduction Public transport is a crucial component of urban infrastructure, providing mobility to millions of people worldwide.</description>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;abstract&lt;/h3&gt;&#xA;&lt;p&gt;Public transport systems are vital for urban mobility, yet disparities in accessibility can contribute to social and economic inequalities. This study aims to evaluate the extent to which public transport accessibility influences inequality, with a particular focus on socioeconomically disadvantaged populations. By integrating geospatial analysis with socioeconomic data, this research seeks to identify disparities in transport accessibility and their broader implications.&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;introduction&lt;/h3&gt;&#xA;&lt;p&gt;Public transport is a crucial component of urban infrastructure, providing mobility to millions of people worldwide. However, accessibility to public transport varies significantly across different populations, leading to potential inequalities in access to employment, education, healthcare, and other essential services [1]. Understanding how these disparities manifest and their broader social implications is essential for informing policy and planning decisions aimed at promoting equitable urban mobility [2].&lt;/p&gt;</description>
     </item>
     <item>
       <title>CV</title>
@@ -63,7 +63,7 @@
       <link>/about/</link>
       <pubDate>Sat, 16 Jul 2022 09:30:57 +0200</pubDate>
       <guid>/about/</guid>
-      <description>engineering information technologist, Ph.D.&#xA;postdoctoral research fellow at ANETI Lab of Corvinus University of Budapest&#xA;interested in data science, data visualization, urban mobility, social sensing, computational sociology, and software engineering</description>
+      <description>&lt;p&gt;engineering information technologist, Ph.D.&lt;/p&gt;&#xA;&lt;p&gt;postdoctoral research fellow at &lt;a href=&#34;https://anetilab.org/&#34;&gt;ANETI Lab&lt;/a&gt; of Corvinus University of Budapest&lt;/p&gt;&#xA;&lt;p&gt;interested in data science, data visualization, urban mobility, social sensing, computational sociology, and software engineering&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

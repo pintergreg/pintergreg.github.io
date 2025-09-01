@@ -4,7 +4,7 @@
     <title>Visualization on Gergő Pintér</title>
     <link>/tags/visualization/</link>
     <description>Recent content in Visualization on Gergő Pintér</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <copyright>2025</copyright>
     <lastBuildDate>Wed, 19 Mar 2025 00:00:00 +0000</lastBuildDate>
@@ -14,7 +14,7 @@
       <link>/for_students/visualizing_spatiotemporal_data/</link>
       <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
       <guid>/for_students/visualizing_spatiotemporal_data/</guid>
-      <description>Urban mobility and city structure are complex, dynamic phenomena that can be effectively analyzed through spatiotemporal data. This project seeks to explore artistic visualizations of such data to reveal patterns of movement, spatial interactions, and urban dynamics. By blending data science with artistic design, this research will examine how visual representations can enhance our understanding of urban spaces.&#xA;With the growing significance of data science, the data visualization and data-based story-telling is also emerging.</description>
+      <description>&lt;p&gt;Urban mobility and city structure are complex, dynamic phenomena that can be effectively analyzed through spatiotemporal data. This project seeks to explore artistic visualizations of such data to reveal patterns of movement, spatial interactions, and urban dynamics. By blending data science with artistic design, this research will examine how visual representations can enhance our understanding of urban spaces.&lt;/p&gt;&#xA;&lt;p&gt;With the growing significance of data science, the data visualization and data-based story-telling is also emerging.&#xA;It also utilized more and more as a part of the data journalism (e.g., [1], [2], [3]).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
