@@ -26,11 +26,11 @@ jobs:
                   bundle install
                   sudo snap install typst
             - name: build site
+              env:
+                  EMAIL: ${{ secrets.EMAIL }}
               run: hugo
 
             - name: generate CV
-              env:
-                  EMAIL: ${{ secrets.EMAIL }}
               run: |
                   bundle exec ruby generate_cv.rb
                   typst c public/cv/index.typ public/cv.pdf
