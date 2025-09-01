@@ -21,9 +21,10 @@ jobs:
 
             - name: install stuff
               run: |
-                  sudo apt-get install -y hugo ruby ruby-bundler ruby-asciidoctor-pdf ruby-toml-rb
+                  sudo apt-get install -y hugo ruby ruby-bundler ruby-asciidoctor-pdf ruby-toml-rb snapd
                   bundle config set path 'venv'
                   bundle install
+                  snap install typst
             - name: build site
               run: hugo
 
