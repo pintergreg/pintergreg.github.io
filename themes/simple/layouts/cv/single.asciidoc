@@ -26,6 +26,18 @@
 {{- end }}
 {{- end }}
 
+== teaching experience
+
+{{- range $.Site.Data.teaching }}
+* {{.title}} ({{.id}})
+** at {{.university}} ({{.from}}--{{ with .to }}{{.}}{{end}})
+** semester: {{.semester}}
+** in {{.language}}
+{{- with .note}}
+** {{.}}
+{{- end}}
+{{- end}}
+
 == language skills
 
 {{ "" }}

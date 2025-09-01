@@ -76,6 +76,24 @@
         </div>
     </section>
     <section class="mt-4">
+        <h2 class="fs-5">Teaching experience</h2>
+        <div>
+            <ul>
+            {{- range $.Site.Data.teaching }}
+            <li>{{.title}} ({{.id}})</li>
+            <ul>
+                <li>at {{.university}} ({{.from}}&ndash;{{ with .to }}{{.}}{{end}})</li>
+                <li>semester: {{.semester}}</li>
+                <li>in {{.language}}</li>
+                {{- with .note}}
+                <li>{{.}}</li>
+                {{- end}}
+            </ul>
+            {{- end}}
+            </ul>
+        </div>
+    </section>
+    <section class="mt-4">
         <h2 class="fs-5">Language skills</h2>
         <div>
             {{- if gt (len $.Params.language_skills.mother_tongues) 1}}
