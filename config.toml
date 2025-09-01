@@ -14,11 +14,16 @@ copyright = "2024"
     suffixes = ["html"]
   [mediaTypes.'text/asciidoc']
     suffixes = ["asciidoc"]
+  [mediaTypes.'text/typst']
+    suffixes = ["typ"]
 
 [outputFormats]
   [outputFormats.asciidoc]
     isPlainText = true
     mediaType = "text/asciidoc"
+  [outputFormats.typ]
+    isPlainText = true
+    mediaType = "text/typst"
 
 [Params]
   github = "pintergreg"
