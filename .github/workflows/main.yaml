@@ -21,10 +21,10 @@ jobs:
 
             - name: install stuff
               run: |
-                  sudo apt-get install -y hugo ruby ruby-bundler ruby-asciidoctor-pdf ruby-toml-rb snapd
+                  sudo apt-get install -y ruby ruby-bundler ruby-asciidoctor-pdf ruby-toml-rb snapd
                   bundle config set path 'venv'
                   bundle install
-                  sudo snap install typst
+                  sudo snap install hugo typst
             - name: build site
               env:
                   EMAIL: ${{ secrets.EMAIL }}
