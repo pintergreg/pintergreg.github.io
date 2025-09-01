@@ -29,7 +29,9 @@ jobs:
               run: hugo
 
             - name: generate CV
-              run: bundle exec ruby generate_cv.rb
+              run: |
+                  bundle exec ruby generate_cv.rb
+                  typst c public/cv/index.typ public/cv.pdf
 
             - name: build site again to include CV
               run: hugo
