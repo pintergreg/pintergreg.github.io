@@ -2,7 +2,7 @@
 title: "CV"
 date: 2024-04-17
 type: cv
-outputs: ["html", "asciidoc"]
+outputs: ["html", "asciidoc", "typ"]
 education:
     - organization:
         name: Óbuda University
