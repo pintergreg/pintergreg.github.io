@@ -22,6 +22,10 @@
 {{- if eq . "for_students" }}
 {{ $for_students = "active" }}
 {{- end }}
+{{ $teaching := ""}}
+{{- if eq . "$teaching" }}
+{{ $teaching = "active" }}
+{{- end }}
 {{- $display_brand := true }}
 {{- if eq . "disable_brand" }}
 {{ $display_brand = false }}
@@ -37,6 +41,7 @@
         <a class="nav-link {{ $publications }}" href="/publications">publications</a>
         <a class="nav-link {{ $talks }}" href="/talks">talks</a>
         <a class="nav-link {{ $for_students }}" href="/for_students">for students</a>
+        <a class="nav-link {{ $teaching }}" href="/teaching">teaching</a>
         <a class="nav-link" href="https://pintergreg.github.io/dissertation/">dissertation</a>
         {{- if gt ((where site.RegularPages "Params.type" "eq" "blog") | len) 0 }}
         <a class="nav-link {{ $blog }}" href="/blog">blog</a>
