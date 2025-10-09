@@ -42,7 +42,7 @@
         <a class="nav-link {{ $talks }}" href="/talks">talks</a>
         <a class="nav-link {{ $for_students }}" href="/for_students">for students</a>
         <a class="nav-link {{ $teaching }}" href="/teaching">teaching</a>
-        <a class="nav-link" href="https://pintergreg.github.io/dissertation/" target="_blank">dissertation</a>
+        <a class="nav-link" href="https://pintergreg.github.io/dissertation/" target="_blank">dissertation <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         {{- if gt ((where site.RegularPages "Params.type" "eq" "blog") | len) 0 }}
         <a class="nav-link {{ $blog }}" href="/blog">blog</a>
         {{- end }}
