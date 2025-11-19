@@ -1,0 +1,10 @@
+name: "institute seminar / IDAIS / CUB"
+description: at the Institute of Data Analytics and Information Systems, Corvinus University of Budapest
+date: November 13, 2025
+date_for_sort: 2025-11-13
+year: 2025
+month: 11
+day: 13
+location: "Budapest, Hungary"
+title: "Geolocating cities using human activity traces"
+slides: "https://pintergreg.github.io/geolocating_cities_using_human_activity_traces/"
