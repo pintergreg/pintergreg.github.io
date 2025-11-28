@@ -2,7 +2,11 @@
 {{ partial "nav.html" "publications" }}
 
 <div class="container mt-3">
+    {{- if os.FileExists "/publications.pdf" }}
+    <h1>{{ .Title }} <a class="link-secondary link-underline-opacity-0" href="/publications.pdf">--pdf</a></h1>
+    {{- else }}
     <h1>{{ .Title }}</h1>
+    {{- end }}
 </div>
 <div class="container pb-5">
 {{ $papers := slice }}
