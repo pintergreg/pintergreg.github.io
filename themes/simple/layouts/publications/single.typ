@@ -1,0 +1,23 @@
+{{- $papers := slice -}}
+{{- range $.Site.Data.publications }}
+{{- $papers = $papers | append . }}
+{{- end }}
+{{- $.Scratch.Set "last_year" 3000 -}}
+
+== publications
+
+{{- range (sort (where $papers "type" "ne" "preprint") ".year" "desc") }}
+{{- if lt (int .year) ($.Scratch.Get "last_year") }}
+
+=== {{.year}}
+
+{{- $.Scratch.Set "last_year" (int .year) }}
+{{- end }}
+
+- {{ .title }}
+    - {{ delimit (partial "format_names.func" .authors) ", " }}
+{{- if eq .type "journal" }}
+    - {{.journal}} {{.year}}, {{.volume}}{{with .issue }} ({{.}}){{end}}; #link("https://doi.org/{{.doi}}")[{{.doi}}]
+{{- end }}
+
+{{- end }}
