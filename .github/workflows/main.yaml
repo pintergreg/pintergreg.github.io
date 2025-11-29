@@ -21,6 +21,7 @@ jobs:
 
             - name: install stuff
               run: |
+                  sudo apt-get update
                   sudo apt-get install -y ruby ruby-bundler ruby-asciidoctor-pdf ruby-toml-rb guix snapd
                   bundle config set path 'venv'
                   bundle install
