@@ -2,7 +2,7 @@
 
 Corvinus Institute of Advanced Studies and Institute of Data Analytics and Information Systems, Corvinus University of Budapest, 1093, 8 Fővám tér, Budapest, Hungary
 
-website: #link("https://pintergreg.github.io")[pintergreg.github.io] | ORCiD: #link("https://orcid.org/0000-0003-4731-3816")[0000-0003-4731-3816]
+ website: #link("https://pintergreg.github.io")[pintergreg.github.io] | ORCiD: #link("https://orcid.org/0000-0003-4731-3816")[0000-0003-4731-3816]
 
 == employment
 
@@ -10,7 +10,7 @@ website: #link("https://pintergreg.github.io")[pintergreg.github.io] | ORCiD: #l
 
 - at Corvinus University of Budapest
     - ANETI Lab, Corvinus Institute of Advanced Studies
-    - Institute of Data Analytics and Information Systems
+    - Department of Network Science, Institute of Data Analytics and Information Systems
 - from 2022-06-01
 
 === university research assistant
