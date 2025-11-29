@@ -38,7 +38,8 @@ jobs:
 
             - name: generate publication list
               run: |
-                  typst c publications.typ public/publications.pdf
+                  typst c publications.typ publications.pdf
+                  cp publications.pdf public/publications.pdf
 
             - name: build site again to include CV
               run: hugo
