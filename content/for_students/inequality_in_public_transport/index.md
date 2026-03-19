@@ -29,17 +29,13 @@ Public transport is a crucial component of urban infrastructure, providing mobil
 
 - How does public transport accessibility vary across different socioeconomic groups?
 - What are the key spatial patterns of transport accessibility and inequality?
-- What policy measures can be implemented to improve equitable access to public transport?
 
 ### methodology
 
-This study will employ a mixed-methods approach, combining quantitative geospatial analysis with qualitative socio-economic assessments.
 Key methodologies will include:
 
 - Geospatial Analysis: Using GIS tools to map and analyze public transport coverage, frequency, and travel times across different urban areas
 - Socioeconomic Data Integration: Overlaying transport accessibility data with demographic and economic indicators to assess correlations between accessibility and inequality.
-- Case Studies: Conducting case studies in select urban regions to provide in-depth insights into lived experiences of transport inequality.
-- Policy Review: Evaluating existing policies on public transport accessibility and equity to identify gaps and areas for improvement.
 
 ### expected outcomes
 
@@ -47,7 +43,6 @@ The study aims to:
 
 - Identify key disparities in public transport accessibility based on socioeconomic factors.
 - Provide empirical evidence on how accessibility differences contribute to broader urban inequalities.
-- Recommend policy interventions to promote a more equitable public transport system.
 
 ### significance of the study
 
