@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Storytelling With Data on Gergő Pintér</title>
-    <link>/tags/storytelling-with-data/</link>
-    <description>Recent content in Storytelling With Data on Gergő Pintér</description>
+    <title>Data Analysis on Gergő Pintér</title>
+    <link>/tags/data-analysis/</link>
+    <description>Recent content in Data Analysis on Gergő Pintér</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2025</copyright>
     <lastBuildDate>Fri, 20 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/storytelling-with-data/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/data-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analyzing LEGO brick dataset</title>
       <link>/for_students/lego/</link>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
       <guid>/for_students/lego/</guid>
       <description>&lt;p&gt;If you are a LEGO fan and interested in data analysis you can combine your interests.&#xA;rebrickable.com provides a up-to-date database for every LEGO brick / set ever released, which is a great foundation for a good thesis.&#xA;The student may select one of the provided research questions or bring their own.&lt;/p&gt;&#xA;&lt;p&gt;The topic of the thesis may include one or more of the following directions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Analysis of LEGO Trends Over the Decades: Investigate how LEGO sets have evolved in terms of themes, complexity, and number of pieces from the 1950s to the present. Analyze trends in user preferences and market reception.&lt;/li&gt;&#xA;&lt;li&gt;Gender Representation in LEGO Sets: Analyze the themes and characters in LEGO sets to evaluate gender representation. Look for patterns in how male and female figures are depicted and marketed through time.&lt;/li&gt;&#xA;&lt;li&gt;Cultural Influences on LEGO Themes: Examine how global events, movies, and pop culture influence the themes and designs of LEGO sets. Explore specific cases where a set was introduced in response to cultural phenomena.&lt;/li&gt;&#xA;&lt;li&gt;Secondary Market Analysis of LEGO Sets: Study the impact LEGO sets on their resale value. Use data to compare how scarcity affects pricing on secondary markets (data available until 2015).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The available data is rich, but you can bring your own ideas and you can find additional data sets.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Artistic visualizations of spatiotemporal data: telling a story of a city with data</title>
-      <link>/for_students/visualizing_spatiotemporal_data/</link>
-      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>/for_students/visualizing_spatiotemporal_data/</guid>
-      <description>&lt;p&gt;Urban mobility and city structure are complex, dynamic phenomena that can be effectively analyzed through spatiotemporal data. This project seeks to explore artistic visualizations of such data to reveal patterns of movement, spatial interactions, and urban dynamics. By blending data science with artistic design, this research will examine how visual representations can enhance our understanding of urban spaces.&lt;/p&gt;&#xA;&lt;p&gt;With the growing significance of data science, the data visualization and data-based story-telling is also emerging.&#xA;It also utilized more and more as a part of the data journalism (e.g., [1], [2], [3]).&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
